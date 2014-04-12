@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" class="demo-2 no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>Design Degree Show 2014, IDC, IIT Bombay</title>
+    
+    <meta name="description" content="The Annual Design Degree Show 2014, showcasing design works by students of the Industrial Design Centre, IIT Bombay">
+	<meta name="keyword" content="Design, Degree, Show, 2013, IDC, IIT, Bombay, Powai, Exhibition, Interaction, Visual, Communication, Animation, Mobility, Vehicle, Product, Industrial, Centre, Center">
+    <meta name="author" content="Pritam Pebam" />
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	
+	
+	
+	<script src="js/custom.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
+	
+    <link href="css/style.css" rel="stylesheet" />
+
+
+    <!-- SVG Hover Effect -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/snap.svg-min.js"></script>
+</head>
+<body>
+
+	<div id="st-container" class="st-container">
+
+		<div class="st-menu st-effect-11 nav" id="menu-11" >
+			<h2 class="icon icon-lab">DDS Icon</h2>
+			<ul>
+				<li><a href="#home">Speakers</a></li>
+				<li><a href="#workshops">Workshops</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#alumni">Alumni</a></li>
+				<li><a href="#sponsors">Sponsors</a></li>
+			</ul>
+		</div>
+
+
+		<!-- content push wrapper -->
+		<div id="others" class="st-pusher">
+
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+
+					<div class="main clearfix">
+						<div id="st-trigger-effects" class="column">
+
+							<button id="drum-roll" data-effect="st-effect-11" >.</button>
+							<div class="head-pic">
+								<a class="breadcrumb">Projects > Students > Visual Communication > Pritam Pebam</a>
+
+								<div class="student-meta">
+									Here comes Student's Brief Data
+									<div class="student-pic"></div>
+								</div>
+							</div>
+
+							<div class="content">
+								
+								<div class="desc">
+									<h2>Big Data Bollywood Explorer</h2>
+									<p>Skipping the doctype can cause issues with malformed tables, inputs, and more.</p>
+
+
+									<h3>Box model math</h3>
+									<p>Elements that have a set width become wider when they have padding and/or border-width. To avoid these problems, make use of the now common box-sizing: border-box; reset.</p>
+
+
+									<h3>Rem units and Mobile Safari</h3>
+									<p>While Mobile Safari supports the use of rems in all property values, it seems to shit the bed when rems are used in dimensional media queries and infinitely flashes the page's text in different sizes.</p>
+
+									<p>For now, use ems in place of rems.</p>
+
+									<img src="img/sketch.png" alt="">
+								</div>
+
+
+
+								<div class="meta"></div>
+
+							</div>
+						</div>
+
+					</div><!-- /main -->
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+
+	</div><!-- /st-container -->
+
+
+
+	
+	
+	<div id="overlay"></div>
+	<div id="bg">
+		<video src="video/dds_dconstruction.mp4" id="bg-video" muted autoplay loop ></video>
+	</div>
+
+</div>
+
+
+<!-- For transitions -->
+<script src="js/classie.js"></script>
+<script src="js/sidebarEffects.js"></script>
+
+<script>
+	(function() {
+
+		function init() {
+			var speed = 330,
+				easing = mina.backout;
+
+			[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+				var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+					pathConfig = {
+						from : path.attr( 'd' ),
+						to : el.getAttribute( 'data-path-hover' )
+					};
+
+				el.addEventListener( 'mouseenter', function() {
+					path.animate( { 'path' : pathConfig.to }, speed, easing );
+				} );
+
+				el.addEventListener( 'mouseleave', function() {
+					path.animate( { 'path' : pathConfig.from }, speed, easing );
+				} );
+			} );
+		}
+
+		init();
+
+	})();
+</script>
+
+
+</body>
+</html>
