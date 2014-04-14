@@ -45,6 +45,8 @@ $(function() {
 	$('.st-menu, .main-nav, .st-container').css({ height: winHeight });
 	$('.content').css({  'width' : winWidth, 'height': winHeight });
 
+	$('.logo-container, .body-bar').css({ 'top' : (winHeight/2) - 200 })
+
 	$('.page-content').css({  'width' : winWidth-425 });
 
 	//Transition animation
@@ -67,7 +69,27 @@ $(function() {
 	});
 
 
+	$(".workshop").click(function(){
+		$('.content').animate({
+	        scrollTop: $("#"+$(this).data('id')).offset().top
+	    }, 200);
+	});
 
+
+/* To fixed page-aside - check back later
+
+	$('.content').scroll(function() {
+	  console.log("Scrolled: " + $(this).scrollTop());
+
+	  if($(this).scrollTop() > 250 ){
+	  	$('.page-aside').css({
+	  		'position' : 'fixed',
+			'right': '50px',
+			'top': '350px'
+	  	});
+	  }
+	});
+*/
 
 }); // jQuery $(funtion() ends
 
@@ -75,7 +97,12 @@ $(function() {
 //Effect for Nav MouseIn
 function hoverIn(){
 	//Mouseover
-	$('.st-menu').css({ '-webkit-transform' : 'translate3d(0, 0, 0)' });
+	$('.st-menu').css({ 
+		'-webkit-transform' : 'translate3d(0, 0, 0)',
+		'-moz-transform' : 'translate3d(0, 0, 0)',
+		'-ms-transform' : 'translate3d(0, 0, 0)',
+		'-o-transform' : 'translate3d(0, 0, 0)' 
+	});
 
 	//Magic webkit 3D pan-tilt in
 	$('#st-container').addClass("st-menu-open");
@@ -85,7 +112,6 @@ function hoverIn(){
 	//pointer inside .main-nav
 	hover = true;
 
-	console.log("Hover In");
 }
 
 
@@ -93,9 +119,14 @@ function hoverIn(){
 function hoverOut(){
     //Mouseout
 
-    $(".main-nav ul").animate({ 'width'  : 50 }, 200);
+    $(".main-nav ul").animate({ 'width'  : 50 }, 50);
 
-    $('.st-menu').css({ '-webkit-transform' : 'translate3d(-200px, 0, 0)' });
+    $('.st-menu').css({ 
+    	'-webkit-transform' : 'translate3d(-200px, 0, 0)',
+    	'-moz-transform' : 'translate3d(-200px, 0, 0)',
+    	'-ms-transform' : 'translate3d(-200px, 0, 0)',
+    	'-o-transform' : 'translate3d(-200px, 0, 0)'
+    });
 
     ////Magic webkit 3D pan-tilt out
 	$('#st-container').removeClass("st-menu-open");
@@ -108,64 +139,27 @@ function hoverOut(){
 
 //Main Page Transition to new viewPane
 function doMagicTransition(e){
+	console.log("doMagicTransition");
 	//Show the pane to be flown in
 	e.show();
-	$('html, body').scrollTop(viewPane.offset().top)	//Set scroll position to the current viewPane
+	var dom = $('body, html');
+	dom.css({ 'overflow' : 'auto' });
+	dom.scrollTop(viewPane.offset().top);	//Set scroll position to the current viewPane
 
-	$('html, body').animate({
+	dom.animate({
         scrollTop: e.offset().top
     }, 500, function(){
-    	console.log("Hover out");
+    	
     	hoverOut();
 
     	if(view){
     		viewPane.hide(10, function(){
 	    		viewPane = e; //Reset current pane in view
+	    		dom.css({ 'overflow' : 'hidden' });
 	    	});
     	}
-  		//viewPane.hide();
-  		//viewPane = e;
     });
-
-
-	//loadPage(page);
 }
 		
 
-function loadPage(page){
-	$('.ajax-loader').show();
-	$("#cWrap").hide();
-	$.scrollTo({top: 0, left:0});
-	
-	if (page.indexOf('!') == 1 ){
-		var data = page.substr(3);		//To handle old URL initially used (format '#!/page-name')
-	} else {
-		var data = page.substr(2);		//To handle new url, format '#/page-name'
-	}
-	
-	 //window.scrollTo(100,500)
-	$.ajax({
-		type: "POST",
-		url: "proc/loadPage.php",
-		data: { "page" : encodeURIComponent(data) },
-		cache: false,
-		error: function(xhr){
-			if(xhr.status == 403){
-				$('#cWrap').html("<section class='page'>It seems you are using IE. Due to some IE Bug, the place can not be displayed properly. Kindly consider using another browser.</section>");
-			}
-		},
-		success: function(html){
-			$('.ajax-loader').hide();
-			$("#cWrap").html(html);
-			$("#cWrap").fadeIn(100, function(){
-				$('#fun').css({ 'height' : $('.page').height() });
-				setTimeout("setHeight()",1000*3);
-				if($(".page>h1").length > 0){
-					$("title").html("Pritam Pebam: " + $(".page>h1").html());
-				} else if($("#y-u-no").length > 0){
-					$("title").html("Pritam Pebam: " + $("#y-u-no").data('title'));
-				}
-			});	
-		}
-	});
-}
+
