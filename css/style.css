@@ -86,6 +86,8 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
 /* Custom Code starts */
 
+.wedge-vert { height: 45px;}
+
 /*  WRAP DIV FOR THE HTML5 VIDEO */
 
 #bg { position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; }
@@ -119,6 +121,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 .content { position: relative; background-color: rgba(255,255,255,1); color: rgba(0,0,0,.9); padding-left: 55px; overflow: scroll; min-width: 1024px; }
     .home-pane .content { background-color: rgba(0,0,0,.7); }
     .workshops-pane .content { background-color: #f4f4f4; }
+    .sponsors-pane .content { color: rgba(255,255,255,.9); padding-top: 25px; background: url(../img/dark_bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
 
     .content:after { content: ' '; display: block; clear: both; }
 
@@ -239,7 +242,6 @@ h3 { font-size: 25px; line-height: 1.4em; }
         .sponsors i { background: url("../img/badge.png") no-repeat; background-size: 30px; }
 
     .home .nav-title { font-size: 30px; font-weight: bold; }
-        /* .nav-title span { display: none; } */
 
 .head-pic {
     width: 100%;
@@ -269,7 +271,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
 .page-content {
     float: left;
-    padding: 40px 15px;
+    padding: 0px 15px 40px 15px;
     font-family: "fira_sans_otregular", sans-serif;
     line-height: 1.4em;
     font-size: 14px;
@@ -280,7 +282,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
     .workshop-meta-two { font-family: "fira_sans_otligth", sans-serif; margin: 30px 0 15px 0; }
         .workshop-meta-two .name-list { list-style: none; margin: -20px 0 15px 25px; }
 
-    .title { font-family: "fira_sans_otmedium", sans-serif; }
+    .title { position: relative; z-index: 10; font-family: "fira_sans_otmedium", sans-serif; }
         h2.title { padding: 20px 10px 10px 25px; color: #00A79D; }
         h3.title { 
             padding: 5px 20px; color: rgba(255,255,255,.9); 
@@ -307,7 +309,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
     .page-content [class^="box-"]>img { position: relative; top: -45px; }
 
-    .table-display { display: table; border-spacing: 15px 0; margin-bottom: 25px; }
+    .table-display { width :100%; display: table; border-spacing: 15px 0; margin-bottom: 25px; }
 
     .box-one { display: table-cell; width: 55%;  min-height: 100px; }
          .box-one .title { background-color: rgba(11,188,195,.9); } 
@@ -330,6 +332,30 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
     .workshop.list { font-family: "fira_sans_otregular", sans-serif; font-size: 14px; margin: 10px 0 10px 25px; color: rgba(255,255,255,.8); }
         .workshop.list:hover { font-family: "fira_sans_otmedium", sans-serif; cursor: pointer; }
+
+.sponsors-pane .table-display { border-spacing: 25px; }
+.sponsors-content, .sponsors-aside { float:left; width: 50%; }
+
+    .reverse-title {  background-color: rgb(0,167,157); color: rgba(255,255,255,.8); padding: 5px 15px; font-size: 18px; }
+        .imp-title { font-weight: bold; font-size: 25px; color: #FFF; }
+        .ft-medium { font-family: "fira_sans_otmedium", sans-serif; }
+
+    .reverse-title-green {  background-color: rgba(214,223,35,.9); color: rgba(0,0,0,.8); padding: 5px 15px; }
+    .brief { color: rgba(255,255,255,.9); width: 60%;}
+    .big-quote { font-family: "fira_sans_otmedium", sans-serif; font-size: 60px; color: rgba(11,188,195,.9); width: 65%; }
+
+.bush { margin: 0 0 40px 25px; }
+#premium .table-display { margin-bottom: 0; }
+    #premium .sponsor-type { display: table-cell; width: 50%; }
+
+    .sponsor-type .amount { font-weight: bold; font-size: 30px; color: rgba(214,223,35,.9); margin-left: 25px; }
+        .break-down { width: 20%; display: table-cell; }
+        .each-ben   { font-size: 13px; padding-left: 5px; padding-top: 5px; border-bottom: 1px solid rgba(214,223,35,.3);}
+
+    .meta-one { font-family: "fira_sans_otmedium", sans-serif; margin-bottom: 15px; }
+    .meta-two { font-family: "fira_sans_otligth", sans-serif; margin: 30px 0 15px 0; }
+        .meta-two .name-list { list-style: none; margin: -20px 0 15px 25px; }
+
 
 
 

@@ -4,7 +4,7 @@
 
 ?>
 <div class="page-banner">
-	<div class="dot-overlay"></div>
+	<!-- <div class="dot-overlay"></div> -->
 </div>
 
 <h2 class="title">Workshops</h2>
