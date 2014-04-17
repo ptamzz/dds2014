@@ -19,6 +19,7 @@
 	<script src="js/jquery.scrollTo.min.js"></script>
 	
 	<script src="js/jquery-ui-blind.min.js"></script>
+	<script src="js/pace.min.js"></script>
 	
 	<script src="js/custom.js"></script>
 	

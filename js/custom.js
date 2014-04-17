@@ -41,12 +41,10 @@ $(function() {
 	});
 
 	//Setting viewport heights
-	$('.st-menu, .main-nav, .st-container').css({ height: winHeight });
+	$('.st-menu, .main-nav').css({ height: winHeight });
 	$('.content').css({  'width' : winWidth, 'height': winHeight });
 
 	$('.logo-container, .body-bar').css({ 'top' : (winHeight/2) - 200 })
-
-	//$('.page-content').css({  'width' : winWidth-425 });
 
 	//Transition animation
 	$('.main-nav').hover( hoverIn, hoverOut);
