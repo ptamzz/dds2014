@@ -275,6 +275,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
     font-family: "fira_sans_otregular", sans-serif;
     line-height: 1.4em;
     font-size: 14px;
+    width: 70%;
 }
 
     .page-content p { margin-bottom: 10px; }
@@ -325,7 +326,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
 .page-aside{
     float: left;
-    width: 300px;
+    width: 30%;
     background-color: #00A79D;
     padding: 40px 10px;
 }

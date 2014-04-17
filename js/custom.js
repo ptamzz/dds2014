@@ -19,27 +19,26 @@ $(function() {
 		winWidth = $(window).width();
 
 	//Initial URL handling
-	page =  window.location.hash.substr(1);
+	page =  window.location.hash.substr(2);
 	if(page != '') {
 		viewPane = $("." + page+"-pane");	//Set current viewPane when loaded with hash URL
 	} else {
 		viewPane = $('.home-pane');	//initial pane in view
 	}
 
+	loadPage(page); //Load New Page
 	doMagicTransition(viewPane);	//Show ViewPane
 
 	//HashBang handling without the "Bang" of course
 	$(window).bind('hashchange', function() {
 		view = true;	//true if loading for the 2nd & subsequent times
-		page =  window.location.hash.substr(1);	//Get URL hash value "/hashvalue" & remove "/" 	
+		page =  window.location.hash.substr(2);	//Get URL hash value "#/hashvalue" & remove "#/" 	
 
 		var e = $("."+page+"-pane");	//Get New viewPane
 		doMagicTransition(e);
+
+		loadPage(page); //Load New Page
 	});
-
-
-	//Playing bg video in slow motion
-	document.getElementById("bg-video").playbackRate=0.5;
 
 	//Setting viewport heights
 	$('.st-menu, .main-nav, .st-container').css({ height: winHeight });
@@ -47,7 +46,7 @@ $(function() {
 
 	$('.logo-container, .body-bar').css({ 'top' : (winHeight/2) - 200 })
 
-	$('.page-content').css({  'width' : winWidth-425 });
+	//$('.page-content').css({  'width' : winWidth-425 });
 
 	//Transition animation
 	$('.main-nav').hover( hoverIn, hoverOut);
@@ -68,12 +67,15 @@ $(function() {
 		$(this).addClass("cur-nav");
 	});
 
-
-	$(".workshop").click(function(){
+	$('.workshops-pane').on("click", ".workshop", function() {
 		$('.content').animate({
 	        scrollTop: $("#"+$(this).data('id')).offset().top
 	    }, 200);
 	});
+
+
+	//Playing bg video in slow motion
+	document.getElementById("bg-video").playbackRate=0.5;
 
 
 /* To fixed page-aside - check back later
@@ -132,6 +134,9 @@ function hoverOut(){
 	$('#st-container').removeClass("st-menu-open");
 	$('.st-pusher').removeClass('magic').addClass('reverse-magic');
 
+	//Scroll to top-left
+	$.scrollTo({top: 0, left:0});
+
 	//pointer outside .main-nav
 	hover = false;
 }
@@ -159,6 +164,27 @@ function doMagicTransition(e){
 	    	});
     	}
     });
+}
+
+function loadPage(p){
+	console.log("LoadPage Called");
+
+	$.ajax({
+		type: "POST",
+		url: "php/loadPage.php",
+		data: { "page" : encodeURIComponent(p) },
+		cache: false,
+		error: function(xhr){
+			if(xhr.status == 403){
+				$('.content').html("<section class='page'>It seems you are using IE. Due to some IE Bug, the place can not be displayed properly. Kindly consider using another browser.</section>");
+			}
+		},
+		success: function(html){
+			console.log("LoadPage Returned");
+			$(".content").html(html);
+			$(".content").fadeIn();	
+		}
+	});
 }
 		
 
