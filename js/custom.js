@@ -98,7 +98,6 @@ $(function() {
 
 //Effect for Nav MouseIn
 function hoverIn(){
-	$(".main-nav ul").finish();
 	//Mouseover
 	$('.st-menu').css({ 
 		'-webkit-transform' : 'translate3d(0, 0, 0)',
@@ -114,7 +113,6 @@ function hoverIn(){
 
 	//pointer inside .main-nav
 	hover = true;
-
 }
 
 
@@ -122,8 +120,6 @@ function hoverIn(){
 function hoverOut(){
     //Mouseout
     $(".main-nav ul").finish();
-
-    $(".main-nav ul").animate({ 'width'  : 50 }, 50);
 
     $('.st-menu').css({ 
     	'-webkit-transform' : 'translate3d(-200px, 0, 0)',
@@ -138,6 +134,8 @@ function hoverOut(){
 
 	//Scroll to top-left
 	$.scrollTo({top: 0, left:0});
+
+	$(".main-nav ul").animate({ 'width'  : 50 }, 150);
 
 	//pointer outside .main-nav
 	hover = false;
