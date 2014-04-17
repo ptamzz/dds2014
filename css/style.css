@@ -140,7 +140,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 .content { position: relative; background-color: rgba(255,255,255,1); color: rgba(0,0,0,.9); padding-left: 55px; overflow: scroll; min-width: 1024px; }
     .home-pane .content { background-color: rgba(0,0,0,.7); }
     .workshops-pane .content { background-color: #f4f4f4; }
-    .sponsors-pane .content { color: rgba(255,255,255,.9); padding-top: 25px; background: url(../img/dark_bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+    .sponsors-pane .content { color: rgba(255,255,255,.9); padding-top: 25px; background: url(../img/dark_bg.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
 
     .content:after { content: ' '; display: block; clear: both; }
 
@@ -243,30 +243,6 @@ h3 { font-size: 25px; line-height: 1.4em; }
     transition:         0.5s;
 }
 
-    @-webkit-keyframes slidein {
-      from { width: 250px; }
-      to { width: 50px; }
-    }
-    @-moz-keyframes slidein {
-      from { width: 250px; }
-      to { width: 50px; }
-    }
-    @-o-keyframes slidein {
-      from { width: 250px; }
-      to { width: 50px; }
-    }
-    @keyframes slidein {
-      from { width: 250px; }
-      to { width: 50px; }
-    }
-
-    .main-nav-animate {
-        -webkit-animation: slidein 50ms ease-in-out; /* Safari 4+ */
-        -moz-animation:    slidein 50ms ease-in-out; /* Fx 5+ */
-        -o-animation:      slidein 50ms ease-in-out; /* Opera 12+ */
-        animation:         slidein 50ms ease-in-out; /* IE 10+ */
-    }
-
 .main-nav { position: fixed; z-index: 100; overflow-x: hidden; }
 .main-nav ul { width: 50px; margin-top: 25px; color: rgba(0,0,0,.7); overflow: hidden; }
     .main-nav ul li.cur-nav { font-weight: bold; }
@@ -302,7 +278,6 @@ h3 { font-size: 25px; line-height: 1.4em; }
         padding: 10px; height: 230px; top: 30px;
     }
 
-        .student-pic { width: 70px; height: 70px; float: left; background: #333 url("../img/leighton.jpg") no-repeat 50% 25%; background-size: cover; }
 
 .desc { width: 700px; font-size: 20px; }
     .desc p { margin-bottom: 20px; }
@@ -310,7 +285,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 /* **** Page banner ******* */
 .page-banner{ height: 250px; margin-left: -55px; }
     .dot-overlay { background: url(../img/pattern.png); position: fixed; background-repeat: repeat; top: 0; left: 0; z-index: 1; width: 100%; height: 250px; }
-    .workshops-pane .page-banner { background: url("../img/workshop-banner.png") no-repeat; background-attachment: fixed; background-size: contain; }
+    .workshops-pane .page-banner { background: url("../img/workshop-banner.jpg") no-repeat; background-attachment: fixed; background-size: contain; }
 
 .page-content {
     float: left;
@@ -373,6 +348,8 @@ h3 { font-size: 25px; line-height: 1.4em; }
     background-color: #00A79D;
     padding: 40px 10px;
 }
+
+.workshops-pane .content .table-display { position: relative; background-color: #f4f4f4; z-index: 10; }
 
     .workshop.list { font-family: "fira_sans_otregular", sans-serif; font-size: 14px; margin: 10px 0 10px 25px; color: rgba(255,255,255,.8); }
         .workshop.list:hover { font-family: "fira_sans_otmedium", sans-serif; cursor: pointer; }

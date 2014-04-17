@@ -1,7 +1,5 @@
 
 
-
-
 <h3 class="title">Sponsors</h2>
 
 <div class="table-display">

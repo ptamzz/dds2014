@@ -1,18 +1,14 @@
-<?php
 
 
+<div class="dot-overlay"></div>
+<div class="page-banner"></div>
 
-?>
-<div class="page-banner">
-	<!-- <div class="dot-overlay"></div> -->
-</div>
-
-<h2 class="title">Workshops</h2>
 <div class="table-display">
+	<h2 class="title">Workshops</h2>
 	<div class="page-content">
 			<div id="pd-workshop" class="box-three">
 				<h3 class="title">Product Conceptualization Workshop</h3>
-				<img src="img/pd-conceptualization-workshop.png" alt="" style="width: 100%;">
+				<img src="img/pd-conceptualization-workshop.jpg" alt="" style="width: 100%;">
 				<div class="box-text">
 					<div class="workshop-meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 4:00PM</div>
 					<p>A product is not just forms and functions. It involves the user directly and hence transcends the physical space and 
@@ -34,7 +30,7 @@
 		<div class="table-display">
 			<div id="chd-workshop" class="box-one">
 				<h3 class="title">Character Design</h3>
-				<img src="img/character-design.png" alt="" style="width: 100%;">
+				<img src="img/character-design.jpg" alt="" style="width: 100%;">
 				<div class="box-text">
 					<div class="workshop-meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 5:30PM</div>
 					<p>The workshop is aimed to provide various important aspects that go into designing characters through the process 
@@ -49,7 +45,7 @@
 			</div>
 			<div id="cali-workshop" class="box-two">
 				<h3 class="title">Calligraphy</h3>
-				<img src="img/calligraphy-design.png" alt="" style="width: 100%;">
+				<img src="img/calligraphy-design.jpg" alt="" style="width: 100%;">
 				<div class="box-text">
 					<p>Calligraphy is an ancient art with historical and cultural significance in may parts of the world. Simply defined, 
 						calligraphy  means “beautiful writing”. The ability to create perfectly balanced and artful lettering is still a 
@@ -67,7 +63,7 @@
 
 			<div id="mv-workshop" class="box-three">
 				<h3 class="title">Mobility & Vehicle Design</h3>
-				<img src="img/mobility-worshop.png" alt="" style="width: 100%;">
+				<img src="img/mobility-worshop.jpg" alt="" style="width: 100%;">
 				<div class="box-text">
 					<p>Design process overview: Shows an overall picture of the design process followed in the automotive 
 						industry and what is the role of an automotive designer</p>
@@ -88,7 +84,7 @@
 		<div id="hw-workshop" class="table-display">
 			<div class="box-two">
 				<h3 class="title">Hardware Innovation</h3>
-				<img src="img/hardware-workshop.png" alt="" style="width: 100%;">
+				<img src="img/hardware-workshop.jpg" alt="" style="width: 100%;">
 				<div class="box-text">
 					<div class="workshop-meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
 					<p>The workshop's objective is to use design process to come up with innovation ideas using hardware prototyping platform. 
@@ -106,7 +102,7 @@
 
 			<div id="dt-workshop" class="box-one">
 				<h3 class="title">Design Thinking Workshop</h3>
-				<img src="img/design-thinking-workshop.png" alt="" style="width: 100%;">
+				<img src="img/design-thinking-workshop.jpg" alt="" style="width: 100%;">
 				<div class="box-text">
 					<p>Conventionally education in India focuses primarily on theory, analysis & subject specific skills which are examples 
 						of Convergent Thinking. Students often miss out on the purpose of their learning and are confused as to where it is 
@@ -123,7 +119,7 @@
 
 			<div id="ma-workshop" class="box-three">
 				<h3 class="title">Designing Mobile App</h3>
-				<img src="img/mob-app-workshop.png" alt="" style="width: 100%;">
+				<img src="img/mob-app-workshop.jpg" alt="" style="width: 100%;">
 				<div class="box-text">
 					<div class="workshop-meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 5:30PM</div>
 					<p>The objective of the workshop is to make students go out in the real world, find contextual problems from their 

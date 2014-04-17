@@ -60,17 +60,11 @@
 
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-
 					<div class="main clearfix">
-						
 						<div id="st-trigger-effects" class="column">
-						 	
 							<button id="drum-roll" data-effect="st-effect-11" ></button>
-							<div class="content">
-								
-							</div>
+							<div class="content"><!-- content will come here --></div>
 						</div>
-					
 					</div><!-- /main -->
 				</div><!-- /st-content-inner -->
 			</div><!-- /st-content -->
@@ -80,24 +74,15 @@
 
 	<!-- Workshops -->
 	<div id="st-container" class="workshops-pane st-container st-effect-11">
-
 		<!-- content push wrapper -->
 		<div class="st-pusher" style="background-color: #f4f4f4;" >
-
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-
 					<div class="main clearfix">
-						
 						<div id="st-trigger-effects" class="column">
-						 	
 							<button id="drum-roll" data-effect="st-effect-11" ></button>
-							<div class="content">
-								<!-- content will come here -->
-								<?php //include("page/workshop.php"); ?>
-							</div>
+							<div class="content"><!-- content will come here --></div>
 						</div>
-					
 					</div><!-- /main -->
 				</div><!-- /st-content-inner -->
 			</div><!-- /st-content -->
@@ -106,22 +91,14 @@
 
 
 	<div id="st-container" class="sponsors-pane st-container st-effect-11">
-
 		<!-- content push wrapper -->
 		<div class="st-pusher">
-
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-
 					<div class="main clearfix">
-						
 						<div id="st-trigger-effects" class="column">
-						 	
 							<button id="drum-roll" data-effect="st-effect-11" ></button>
-							<div class="content">
-								<!-- content will come here -->
-								<?php //include("page/sponsor.php"); ?>
-							</div>
+							<div class="content"><!-- content will come here --></div>
 						</div>
 					
 					</div><!-- /main -->
