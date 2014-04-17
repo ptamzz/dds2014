@@ -224,7 +224,31 @@ h3 { font-size: 25px; line-height: 1.4em; }
     transition:         0.5s;
 }
 
-.main-nav { position: fixed; z-index: 100; }
+    @-webkit-keyframes slidein {
+      from { width: 250px; }
+      to { width: 50px; }
+    }
+    @-moz-keyframes slidein {
+      from { width: 250px; }
+      to { width: 50px; }
+    }
+    @-o-keyframes slidein {
+      from { width: 250px; }
+      to { width: 50px; }
+    }
+    @keyframes slidein {
+      from { width: 250px; }
+      to { width: 50px; }
+    }
+
+    .main-nav-animate {
+        -webkit-animation: slidein 50ms ease-in-out; /* Safari 4+ */
+        -moz-animation:    slidein 50ms ease-in-out; /* Fx 5+ */
+        -o-animation:      slidein 50ms ease-in-out; /* Opera 12+ */
+        animation:         slidein 50ms ease-in-out; /* IE 10+ */
+    }
+
+.main-nav { position: fixed; z-index: 100; overflow-x: hidden; }
 .main-nav ul { width: 50px; margin-top: 25px; color: rgba(0,0,0,.7); overflow: hidden; }
     .main-nav ul li.cur-nav { font-weight: bold; }
     .main-nav ul li a { width: 250px; display: block; padding: 10px; }

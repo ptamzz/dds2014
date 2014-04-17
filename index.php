@@ -15,7 +15,7 @@
 
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
-	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
 	
 	<script src="js/jquery-ui-blind.min.js"></script>

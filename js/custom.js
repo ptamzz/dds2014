@@ -55,7 +55,7 @@ $(function() {
 
 	//If pointer moves more than 20px, call hoverIn
 	$('.main-nav').mousemove(function(e){
-      if (Math.abs(mouseY - e.clientY) > 20){
+      if (Math.abs(mouseY - e.clientY) > 20 ){
       	hoverIn();
       	mouseY = e.clientY; //reset mouse pointer 
       }
@@ -98,6 +98,7 @@ $(function() {
 
 //Effect for Nav MouseIn
 function hoverIn(){
+	$(".main-nav ul").finish();
 	//Mouseover
 	$('.st-menu').css({ 
 		'-webkit-transform' : 'translate3d(0, 0, 0)',
@@ -120,6 +121,7 @@ function hoverIn(){
 //Effect for Nav MouseOut
 function hoverOut(){
     //Mouseout
+    $(".main-nav ul").finish();
 
     $(".main-nav ul").animate({ 'width'  : 50 }, 50);
 
@@ -130,7 +132,7 @@ function hoverOut(){
     	'-o-transform' : 'translate3d(-200px, 0, 0)'
     });
 
-    ////Magic webkit 3D pan-tilt out
+    //Magic webkit 3D pan-tilt out
 	$('#st-container').removeClass("st-menu-open");
 	$('.st-pusher').removeClass('magic').addClass('reverse-magic');
 
