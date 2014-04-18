@@ -140,14 +140,13 @@ h3 { font-size: 25px; line-height: 1.4em; }
 .content { position: relative; background-color: rgba(255,255,255,1); color: rgba(0,0,0,.9); padding-left: 55px; overflow: scroll; min-width: 1024px; }
     .home-pane .content { background-color: rgba(0,0,0,.7); }
     .workshops-pane .content { background-color: #f4f4f4; }
-    .sponsors-pane .content { color: rgba(255,255,255,.9); padding-top: 25px; background: url(../img/dark_bg.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+    .sponsors-pane .content { color: rgba(255,255,255,.9); padding-top: 25px; background: url(../img/dark_bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
 
     .content:after { content: ' '; display: block; clear: both; }
 
     .home-left { position: absolute; top: 865px; color: #FFF; width: 500px; margin-left: 100px; }
 
 /* Effect 11: Scale and rotate pusher */
-
 .st-container { position: relative; z-index: 10; display: none; }
 
 .st-effect-11.st-container {
