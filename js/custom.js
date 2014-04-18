@@ -19,7 +19,9 @@ $(function() {
 		winWidth = $(window).width();
 
 	//Initial URL handling
-	page =  window.location.hash.substr(2);
+	page = getPage(window.location.hash); //return page from url
+
+	//page =  window.location.hash.substr(2);
 	if(page != '') {
 		viewPane = $("." + page+"-pane");	//Set current viewPane when loaded with hash URL
 	} else {
@@ -32,7 +34,7 @@ $(function() {
 	//HashBang handling without the "Bang" of course
 	$(window).bind('hashchange', function() {
 		view = true;	//true if loading for the 2nd & subsequent times
-		page =  window.location.hash.substr(2);	//Get URL hash value "#/hashvalue" & remove "#/" 	
+		page =  getPage(window.location.hash);	//Get URL hash value "#/hashvalue" & remove "#/" 	
 
 		var e = $("."+page+"-pane");	//Get New viewPane
 		doMagicTransition(e);
@@ -184,6 +186,17 @@ function loadPage(p){
 		}
 	});
 }
-		
+
+
+function getPage(hash){
+	var url;
+	if (hash.charAt(1) == "/" ){
+		var url = hash.substr(2);		//To handle new URL  (format '#/page-name')
+	} else {
+		var url = hash.substr(1);		//To handle old url, format '#/page-name'
+	}
+
+	return url;
+}	
 
 

@@ -98,7 +98,6 @@
 							<button id="drum-roll" data-effect="st-effect-11" ></button>
 							<div class="content"><!-- content will come here --></div>
 						</div>
-					
 					</div><!-- /main -->
 				</div><!-- /st-content-inner -->
 			</div><!-- /st-content -->
@@ -108,28 +107,25 @@
 	<div id="overlay"></div>
 	<div id="bg">
 		<video id="bg-video" muted autoplay loop>
-			<source src="video/dds_dconstruction.mp4" type="video/mp4">
-			<source src="video/dds_dconstruction.webm" type="video/webm">
+			<source src="video/video2.webm" type='video/webm'>
+			<source src="video/video2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
 		</video>
 	</div>
 </div>
 <!-- For transitions -->
 <script src="js/classie.js"></script>
 <script src="js/sidebarEffects.js"></script>
-<!-- 
-<script type="text/javascript">
+	<script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-38979718-1']);
-	  _gaq.push(['_trackPageview']);
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-38979718-1']);
+		  _gaq.push(['_trackPageview']);
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-</script>
--->
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+	</script>
 </body>
 </html>
