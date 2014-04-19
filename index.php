@@ -18,6 +18,11 @@
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
 	
+	<script src="js/isotope.pkgd.min.js"></script>	<!-- For Mazonary layout -->
+	<script src="js/masonry-horizontal.js"></script> <!-- Isotope aditional requirement for horizontal layouting -->
+	<script src="js/jquery.mousewheel.js"></script>	<!-- Mapping vertical mouse/trackpad scrolling to horizontal scrolling -->
+	
+
 	<script src="js/jquery-ui-blind.min.js"></script>
 	<script src="js/pace.min.js"></script>
 	
@@ -37,10 +42,10 @@
 					<span class="nav-title">DDS 2014</span>
 				</a>
 			</li>
-			<li class="workshops">
-				<a href="#/workshops">
+			<li class="d-tour">
+				<a href="#/d-tour">
 					<i class="icon"></i>
-					<span class="nav-title">Workshops</span>
+					<span class="nav-title">d.tour</span>
 				</a>
 			</li>
 			<li class="sponsors">
@@ -56,6 +61,24 @@
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<div class="main clearfix">
+						<div id="st-trigger-effects" class="column">
+							<button id="drum-roll" data-effect="st-effect-11" ></button>
+							<div class="content"><!-- content will come here --></div>
+						</div>
+					</div><!-- /main -->
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+
+
+	<!-- d.tour -->
+	<div id="st-container" class="d-tour-pane st-container st-effect-11">
+		<!-- content push wrapper -->
+		<div class="st-pusher" style="background-color: #f4f4f4;" >
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
@@ -114,7 +137,6 @@
 </div>
 <!-- For transitions -->
 <script src="js/classie.js"></script>
-<script src="js/sidebarEffects.js"></script>
 	<script type="text/javascript">
 
 		  var _gaq = _gaq || [];

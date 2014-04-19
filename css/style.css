@@ -94,6 +94,9 @@ a {
 
 .pace-inactive { display: none; }
 
+.left { float: left; }
+.right { float: right; }
+
 /*** END: Page Loading styling **/
 
 
@@ -105,8 +108,6 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
 /* Custom Code starts */
 
-.wedge-vert { height: 45px;}
-
 /*  WRAP DIV FOR THE HTML5 VIDEO */
 
 #bg { position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; }
@@ -117,8 +118,11 @@ h3 { font-size: 25px; line-height: 1.4em; }
 .small-icon { width: 40px; float: left; margin-left: -55px; margin-top: -15px; }
         .main-title { font-size: 30px; font-family: 'fira_sans_otbold', sans-serif; margin-bottom: 20px; }
 
-    p.quote { font-size: 20px; margin: 20px 0 20px 20px; }
-        p.quote-meta { font-family: 'fira_sans_otlight', sans-serif; margin: -15px 0 20px 20px; font-size: 12px; }
+    .quote { font-size: 20px; margin: 20px 0 20px 0; }
+        .quote-meta { font-family: 'fira_sans_otlight', sans-serif; margin: -15px 0 20px 20px; font-size: 12px; }
+    .reverse-quote {  font-size: 20px; margin: 20px 0 20px 0; background-color: rgb(0,167,157); padding: 5px 15px; display: inline-block; }
+    
+    .big-quote { font-size: 60px; margin: 20px 0 20px 0; }
 
 .small-meta { font-size: 12px; margin-top: 8px; }
 
@@ -137,10 +141,10 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
     
 
-.content { position: relative; background-color: rgba(255,255,255,1); color: rgba(0,0,0,.9); padding-left: 55px; overflow: scroll; min-width: 1024px; }
+.content { position: relative; background-color: rgba(255,255,255,1); color: rgba(0,0,0,.9); padding-left: 50px; overflow: scroll; min-width: 1024px; }
     .home-pane .content { background-color: rgba(0,0,0,.7); }
     .workshops-pane .content { background-color: #f4f4f4; }
-    .sponsors-pane .content { color: rgba(255,255,255,.9); padding-top: 25px; background: url(../img/dark_bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+    .sponsors-pane .content { color: rgba(255,255,255,.9); background: url(../img/dark_bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
 
     .content:after { content: ' '; display: block; clear: both; }
 
@@ -250,131 +254,81 @@ h3 { font-size: 25px; line-height: 1.4em; }
         .main-nav ul li a i { display: block; float: left; }
         .main-nav ul li a span.nav-title { display: block; float: left; margin-left: 15px; font-size: 15px; margin-top: 7px; }
 
-    .icon { display: inline-block; width: 30px; height: 35px; }
+.icon { display: inline-block; width: 30px; height: 35px; }
 
         .home i { background: url("../img/dds_main_icon.png") no-repeat; background-size: 30px; }
         .speakers i { background: url("../img/mic.png") no-repeat; background-size: 30px; }
-        .workshops i { background: url("../img/edit.png") no-repeat; background-size: 30px; }
+        /*.workshops i { background: url("../img/edit.png") no-repeat; background-size: 30px; }*/
+        .d-tour i { background: url("../img/edit.png") no-repeat; background-size: 30px; }
         .projects i { background: url("../img/stack.png") no-repeat; background-size: 30px; }
         .alumni i { background: url("../img/social.png") no-repeat; background-size: 30px; }
         .sponsors i { background: url("../img/badge.png") no-repeat; background-size: 30px; }
 
     .home .nav-title { font-size: 30px; font-weight: bold; }
 
-.head-pic {
-    width: 100%;
-    position: relative;
-    top: 0; height: 300px;
-    background: #ffffff url("../img/branding.png") no-repeat 50% 25%;
-    background-size: 100% auto;
-    background-position: fixed;
-}
 
-    .head-pic .breadcrumb { position: fixed; left: 100px; top: 30px; }
+.meta-one { font-family: "fira_sans_otmedium", sans-serif; }
+.meta-two { font-family: "fira_sans_otligth", sans-serif; }
+    .meta-two .name-list { list-style: none; margin: -20px 0 15px 25px; }
 
-    .head-pic .student-meta { 
-        width: 430px; position: fixed; left: 950px; background-color: rgba(255,255,255,.7);
-        padding: 10px; height: 230px; top: 30px;
-    }
+/* isotope for Masonry Layout */
+.isotope { z-index: 100; }
+    .isotope:after { content: ''; display: block; clear: both; } /* clear fix */
+
+/* ******* d.tour *************** */
+.d-tour-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+.d-tour-pane .content h3.title, h3.title { font-size: 50px; color: #00A79D; padding: 0; }
+
+#char-design { background-color: #486BB3; color: #FFF; }
+#product-design { background-color: #D61F2F; color: #FFF; }
+#calligraphy-design { background-color: #099948; color: #FFF; }
+#mobility-design { background-color: #0D6194; color: #FFF; }
+#hardware-design { background-color: #F15925; color: #FFF; }
+#mobile-design { background-color: #8DB03F; color: #FFF; }
 
 
-.desc { width: 700px; font-size: 20px; }
-    .desc p { margin-bottom: 20px; }
+    .each-tour:first-child { width: 600px; padding: 20px 35px }
+    .each-tour { float: left; min-height: 700px;  width: 500px; min-height: 100px; }
+    .d-tour-pane .each-tour:last-child { width: 50px; background-color: #7B9630; color: #FFF; }
 
-/* **** Page banner ******* */
-.page-banner{ height: 250px; margin-left: -55px; }
-    .dot-overlay { background: url(../img/pattern.png); position: fixed; background-repeat: repeat; top: 0; left: 0; z-index: 1; width: 100%; height: 250px; }
-    .workshops-pane .page-banner { background: url("../img/workshop-banner.jpg") no-repeat; background-attachment: fixed; background-size: contain; }
+        .each-tour h4.title { font-size: 30px; margin: 15px 0 10px 0; }
+            .d-tour-pic { height: 350px; width: 100%; }
+                .d-tour-pic:after {
+                    content: ''; display: block; width: 100%;  top: 0; left: 0;z-index: 10;
+                    
+                    /* For image Vignette Effect */
+                    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(2,0,0,0.45) 89%, rgba(0,0,0,0.51) 100%); /* FF3.6+ */
+                    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(89%,rgba(2,0,0,0.45)), color-stop(100%,rgba(0,0,0,0.51))); /* Chrome,Safari4+ */
+                    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(2,0,0,0.45) 89%,rgba(0,0,0,0.51) 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(2,0,0,0.45) 89%,rgba(0,0,0,0.51) 100%); /* Opera 12+ */
+                    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(2,0,0,0.45) 89%,rgba(0,0,0,0.51) 100%); /* IE10+ */
+                    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(2,0,0,0.45) 89%,rgba(0,0,0,0.51) 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#82000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                }
 
-.page-content {
-    float: left;
-    padding: 0px 15px 40px 15px;
-    font-family: "fira_sans_otregular", sans-serif;
-    line-height: 1.4em;
-    font-size: 14px;
-    width: 70%;
-}
+                #char-design .d-tour-pic { background: url(../img/character-design.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+                #product-design .d-tour-pic { background: url(../img/pd-conceptualization-workshop.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+                #calligraphy-design .d-tour-pic { background: url(../img/calligraphy-design.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+                #mobility-design .d-tour-pic { background: url(../img/mobility-worshop.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+                #hardware-design .d-tour-pic { background: url(../img/hardware-workshop.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+                #mobile-design .d-tour-pic { background: url(../img/mob-app-workshop.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+            .d-tour-desc { padding: 25px 35px; }
+    .each-tour:first-child .quote { margin-top: 55px; color: #6B0A29; } 
+    .each-tour .teaser { width: 450px; margin-top: 25px; color: #404041; }
+        .each-tour .teaser .meta-one { margin-top: 30px; }
 
-    .page-content p { margin-bottom: 10px; }
-    .workshop-meta-one { font-family: "fira_sans_otmedium", sans-serif; margin-bottom: 15px; }
-    .workshop-meta-two { font-family: "fira_sans_otligth", sans-serif; margin: 30px 0 15px 0; }
-        .workshop-meta-two .name-list { list-style: none; margin: -20px 0 15px 25px; }
 
-    .title { position: relative; z-index: 10; font-family: "fira_sans_otmedium", sans-serif; }
-        h2.title { padding: 20px 10px 10px 25px; color: #00A79D; }
-        h3.title { 
-            padding: 5px 20px; color: rgba(255,255,255,.9); 
-            position: relative; width: 100%; z-index: 1;
+/* ********** Sponsors ************ */
+.sponsors-pane .content .each-tour:first-child { width: 650px; margin-right: 100px; }
+    #idc-vert { background: url(../img/idc-vert.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
-            -webkit-border-radius: 3px 3px 0 0;
-            -moz-border-radius: 3px 3px 0 0;
-            -ms-border-radius: 3px 3px 0 0;
-            -o-border-radius: 3px 3px 0 0;
-            border-radius: 3px 3px 0 0;
-        }
+    .sponsors-pane .teaser { color: rgba(255,255,255,.8); }
+        .contact-list { margin-top: 25px; }
+        .contact-list ul { list-style: none; }
+            .yellow { color: #FFE11A;}
+    
+    
 
-    .page-content>[class^="box-"], .page-content>.table-display>[class^="box-"] { 
-        margin-bottom: 25px; background-color: #FFF; position: relative; border: 1px solid #f1f1f1; 
-
-        -webkit-border-radius: 3px 3px 3px 3px;
-        -moz-border-radius: 3px 3px 3px 3px;
-        -ms-border-radius: 3px 3px 3px 3px;
-        -o-border-radius: 3px 3px 3px 3px;
-        border-radius: 3px 3px 3px 3px;
-    }
-
-    .page-content>[class^="box-"]:after, .page-content>.table-display>[class^="box-"]:after { content: ' '; display: block; clear: both; }
-
-    .page-content [class^="box-"]>img { position: relative; top: -45px; }
-
-    .table-display { width :100%; display: table; border-spacing: 15px 0; margin-bottom: 25px; }
-
-    .box-one { display: table-cell; width: 55%;  min-height: 100px; }
-         .box-one .title { background-color: rgba(11,188,195,.9); } 
-
-    .box-two { display: table-cell; width: 45%; min-height: 100px; }
-        .box-two .title { background-color: rgba(126,99,171,.9); }
-
-    .box-three { min-height: 100px; margin: 0 15px; }
-        .box-three .title { background-color: rgba(81,184,242,.9); }
-
-    .box-text { margin-top: -40px; padding: 15px 35px; }
-        .box-three .box-text { width: 70%; float: right; }
-
-.page-aside{
-    float: left;
-    width: 30%;
-    background-color: #00A79D;
-    padding: 40px 10px;
-}
-
-.workshops-pane .content .table-display { position: relative; background-color: #f4f4f4; z-index: 10; }
-
-    .workshop.list { font-family: "fira_sans_otregular", sans-serif; font-size: 14px; margin: 10px 0 10px 25px; color: rgba(255,255,255,.8); }
-        .workshop.list:hover { font-family: "fira_sans_otmedium", sans-serif; cursor: pointer; }
-
-.sponsors-pane .table-display { border-spacing: 25px; }
-.sponsors-content, .sponsors-aside { float:left; width: 50%; }
-
-    .reverse-title {  background-color: rgb(0,167,157); color: rgba(255,255,255,.8); padding: 5px 15px; font-size: 18px; }
-        .imp-title { font-weight: bold; font-size: 25px; color: #FFF; }
-        .ft-medium { font-family: "fira_sans_otmedium", sans-serif; }
-
-    .reverse-title-green {  background-color: rgba(214,223,35,.9); color: rgba(0,0,0,.8); padding: 5px 15px; }
-    .brief { color: rgba(255,255,255,.9); width: 60%;}
-    .big-quote { font-family: "fira_sans_otmedium", sans-serif; font-size: 60px; color: rgba(11,188,195,.9); width: 65%; }
-
-.bush { margin: 0 0 40px 25px; }
-#premium .table-display { margin-bottom: 0; }
-    #premium .sponsor-type { display: table-cell; width: 50%; }
-
-    .sponsor-type .amount { font-weight: bold; font-size: 30px; color: rgba(214,223,35,.9); margin-left: 25px; }
-        .break-down { width: 20%; display: table-cell; }
-        .each-ben   { font-size: 13px; padding-left: 5px; padding-top: 5px; border-bottom: 1px solid rgba(214,223,35,.3);}
-
-    .meta-one { font-family: "fira_sans_otmedium", sans-serif; margin-bottom: 15px; }
-    .meta-two { font-family: "fira_sans_otligth", sans-serif; margin: 30px 0 15px 0; }
-        .meta-two .name-list { list-style: none; margin: -20px 0 15px 25px; }
 
 
 
