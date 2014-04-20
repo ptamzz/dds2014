@@ -166,19 +166,14 @@ function loadPage(p){
 			}
 		},
 		success: function(html){
+			
+
 			console.log("LoadPage Returned");
+			$('.content').css({ 'overflow' : 'hidden' });
 			$(".content").html(html);
 			$(".content").fadeIn();	
 
 			if(p == 'd-tour' || p == 'sponsors'){
-				var $container = $('.isotope');
-				// init
-				$container.isotope({
-				  // options
-				  itemSelector: '.each-tour',
-				  layoutMode: 'masonryHorizontal'
-				});
-
 				//Setting d.tour height
 				$('.each-tour').css({ 'height' : winHeight });
 				$( ".each-tour" ).each(function(i) {
@@ -187,7 +182,18 @@ function loadPage(p){
 					if(i%2 == 0){ $(this).children('.d-tour-pic').css({ 'position' : 'absolute', 'bottom' : 0 }); }
 				});
 
-			}
+			} else if (p == 'contact'){
+				$('#contact-map, .google-maps').css({ 'width' : winWidth - 500, 'height' : winHeight });	//450 for the right each-tour
+			} 
+
+			var $container = $('.isotope');
+			$container.css({ 'height' : winHeight });
+			// init Isotoppe
+			$container.isotope({
+			  // options
+			  itemSelector: '.each-tour',
+			  layoutMode: 'masonryHorizontal'
+			});
 		}
 	});
 }

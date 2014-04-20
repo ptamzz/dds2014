@@ -54,6 +54,12 @@
 					<span class="nav-title">Sponsors</span>
 				</a>
 			</li>
+			<li class="contact">
+				<a href="#/contact">
+					<i class="icon"></i>
+					<span class="nav-title">Contact</span>
+				</a>
+			</li>
 		</ul>
 	</nav>
 	<div id="st-container" class="home-pane st-container st-effect-11">
@@ -65,7 +71,6 @@
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
 						<div id="st-trigger-effects" class="column">
-							<button id="drum-roll" data-effect="st-effect-11" ></button>
 							<div class="content"><!-- content will come here --></div>
 						</div>
 					</div><!-- /main -->
@@ -83,7 +88,6 @@
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
 						<div id="st-trigger-effects" class="column">
-							<button id="drum-roll" data-effect="st-effect-11" ></button>
 							<div class="content"><!-- content will come here --></div>
 						</div>
 					</div><!-- /main -->
@@ -101,7 +105,6 @@
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
 						<div id="st-trigger-effects" class="column">
-							<button id="drum-roll" data-effect="st-effect-11" ></button>
 							<div class="content"><!-- content will come here --></div>
 						</div>
 					</div><!-- /main -->
@@ -118,7 +121,21 @@
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
 						<div id="st-trigger-effects" class="column">
-							<button id="drum-roll" data-effect="st-effect-11" ></button>
+							<div class="content"><!-- content will come here --></div>
+						</div>
+					</div><!-- /main -->
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+
+	<div id="st-container" class="contact-pane st-container st-effect-11">
+		<!-- content push wrapper -->
+		<div class="st-pusher">
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<div class="main clearfix">
+						<div id="st-trigger-effects" class="column">
 							<div class="content"><!-- content will come here --></div>
 						</div>
 					</div><!-- /main -->
