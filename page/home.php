@@ -21,7 +21,7 @@
 	<p class="quote">“Analyze the elements of a design in order to expose internal assumptions and contradictions, 
 		explore the merits of their contributions, and challenge claims of significance or ideality.”
 	</p>
-	<p class="quote-meta">- Deconstructing Product Design, WILLIAN LIDWELL</p>
+	<p class="quote-meta">- Deconstructing Product Design, WILLIAM LIDWELL</p>
 
 	<p>The term deconstruction was coined by the French philosopher Jacques Derrida, in his 1967 book 
 		of Grammatology, and deconstruction itself grew out of semiotics theory.</p>

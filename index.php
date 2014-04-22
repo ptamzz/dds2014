@@ -5,7 +5,10 @@
     <title>Design Degree Show 2014, IDC, IIT Bombay</title>
     
     <meta name="description" content="The Annual Design Degree Show 2014, showcasing design works by students of the Industrial Design Centre, IIT Bombay">
-	<meta name="keyword" content="Design, Degree, Show, 2013, IDC, IIT, Bombay, Powai, Exhibition, Interaction, Visual, Communication, Animation, Mobility, Vehicle, Product, Industrial, Centre, Center">
+	<meta name="keyword" content="Design, Degree, Show, 2013, IDC, IIT, Bombay, Powai, Exhibition, Interaction, Visual, Communication, 
+	Animation, Mobility, Vehicle, Product, Industrial, Centre, Center" />
+	<link rel="image_src" href="http://www.ddsidc.com/img/dds_preview.jpg" / >
+
     <meta name="author" content="Pritam Pebam" />
     <link rel="shortcut icon" href="img/favicon.png">
 
@@ -60,6 +63,51 @@
 					<span class="nav-title">Contact</span>
 				</a>
 			</li>
+
+			<li class="d-tour">
+				<a href="#/d-tour">
+					<i class="icon"></i>
+					<span class="nav-title">About</span>
+				</a>
+			</li>
+			<li class="sponsors">
+				<a href="#/sponsors">
+					<i class="icon"></i>
+					<span class="nav-title">Alumni</span>
+				</a>
+			</li>
+			<li class="contact">
+				<a href="#/contact">
+					<i class="icon"></i>
+					<span class="nav-title">Registration</span>
+				</a>
+			</li>
+			<li class="d-tour">
+				<a href="#/d-tour">
+					<i class="icon"></i>
+					<span class="nav-title">Speakers</span>
+				</a>
+			</li>
+			<li class="sponsors">
+				<a href="#/sponsors">
+					<i class="icon"></i>
+					<span class="nav-title">Workshops</span>
+				</a>
+			</li>
+			<li class="contact">
+				<a href="#/contact">
+					<i class="icon"></i>
+					<span class="nav-title">Schedule</span>
+				</a>
+			</li>
+			<li class="contact">
+				<a href="#/contact">
+					<i class="icon"></i>
+					<span class="nav-title">Profile</span>
+				</a>
+			</li>
+
+
 		</ul>
 	</nav>
 	<div id="st-container" class="home-pane st-container st-effect-11">
@@ -70,9 +118,7 @@
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
-						<div id="st-trigger-effects" class="column">
-							<div class="content"><!-- content will come here --></div>
-						</div>
+						<div class="content"><!-- content will come here --></div>
 					</div><!-- /main -->
 				</div><!-- /st-content-inner -->
 			</div><!-- /st-content -->
@@ -87,15 +133,12 @@
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
-						<div id="st-trigger-effects" class="column">
-							<div class="content"><!-- content will come here --></div>
-						</div>
+						<div class="content"><!-- content will come here --></div>
 					</div><!-- /main -->
 				</div><!-- /st-content-inner -->
 			</div><!-- /st-content -->
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
-
 
 	<!-- Workshops -->
 	<div id="st-container" class="workshops-pane st-container st-effect-11">
@@ -104,9 +147,7 @@
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
-						<div id="st-trigger-effects" class="column">
-							<div class="content"><!-- content will come here --></div>
-						</div>
+						<div class="content"><!-- content will come here --></div>
 					</div><!-- /main -->
 				</div><!-- /st-content-inner -->
 			</div><!-- /st-content -->
@@ -120,9 +161,7 @@
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
-						<div id="st-trigger-effects" class="column">
-							<div class="content"><!-- content will come here --></div>
-						</div>
+						<div class="content"><!-- content will come here --></div>
 					</div><!-- /main -->
 				</div><!-- /st-content-inner -->
 			</div><!-- /st-content -->
@@ -135,9 +174,7 @@
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
-						<div id="st-trigger-effects" class="column">
-							<div class="content"><!-- content will come here --></div>
-						</div>
+						<div class="content"><!-- content will come here --></div>
 					</div><!-- /main -->
 				</div><!-- /st-content-inner -->
 			</div><!-- /st-content -->
@@ -151,11 +188,10 @@
 			<source src="video/video2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
 		</video>
 	</div>
-</div>
+
 <!-- For transitions -->
 <script src="js/classie.js"></script>
 	<script type="text/javascript">
-
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-38979718-1']);
 		  _gaq.push(['_trackPageview']);

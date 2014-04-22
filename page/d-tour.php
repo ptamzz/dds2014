@@ -20,7 +20,7 @@
 		<div class="d-tour-desc">
 			<h4 class="title">Character Design</h4>
 
-			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 5:30PM</div>
+			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
 			<p class="quote">What does it take to create a memorable character?</p>
 			<p>
 				The workshop is aimed to provide various important aspects that go into designing characters through the process 
@@ -34,7 +34,7 @@
 		<div class="d-tour-desc">
 			<h4 class="title">Product Conceptualisation</h4>
 			
-			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 4:00PM</div>
+			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
 			<p class="quote">How will the world look if it is not designed?</p>
 			<p>
 				A product is not just forms and functions. It involves the user directly and hence transcends the physical space and 
@@ -49,6 +49,7 @@
 		<div class="d-tour-pic"></div>
 		<div class="d-tour-desc">
 			<h4 class="title">Calligraphy Design</h4>
+			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
 			<p>
 				Calligraphy is an ancient art with historical and cultural significance in may parts of the world. Simply defined, 
 				calligraphy  means “beautiful writing”. The ability to create perfectly balanced and artful lettering is still a 
@@ -65,12 +66,15 @@
 	<div id="mobility-design" class="each-tour">
 		<div class="d-tour-desc">
 			<h4 class="title">Mobility & Vehicle Design</h4>
+			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
 			<p>
 				The tour will show an overall picture of the role of an automotive designer & the design process followed in the automotive 
 				industry.
 			</p>
-			<p>Modelling clay: Model making in general – purpose, usage, techniques. Medium: clay</p>
-			<p>Sketching and rendering: Demonstration, tips and techniques of automotive sketching and rendering Medium: paper and software.</p>
+			<p><span class="meta-one">Modelling clay</span>: Model making in general purpose, usage, techniques.</p>
+			<p><span class="meta-one">Medium</span>: Clay</p>
+			<p><span class="meta-one">Sketching and Rendering</span>: Demonstration, tips and techniques of automotive sketching and rendering</p>
+			<p><span class="meta-one">Medium</span>: Paper and Software</p>
 		</div>
 		<div class="d-tour-pic"></div>
 	</div>
@@ -79,11 +83,16 @@
 		<div class="d-tour-pic"></div>
 		<div class="d-tour-desc">
 			<h4 class="title">Hardware Innovation</h4>
+			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
 			<p>
-				The workshop's objective is to use design process to come up with innovation ideas using hardware prototyping platform. 
-				It's intented for engine	ers and DIY hobbyists who want to create interactive objects or environments. The workshop would
-				start with a brief discussion about the trends in contemporary technology and try to predict future trends.
+				The workshop's objective is to use the design process to come up with innovation ideas using a hardware prototyping platform. 
+				It's intended for engineers and DIY hobbyists who want to create interactive objects or environments.
+			</p>
+			<p>
+				The workshop would start with a brief discussion about the trends in contemporary technology and try to predict future trends.
 				This will be followed by an introduction to micro-controllers, with an overview of Open Hardware and community driven projects.
+			</p>
+			<p>
 				We shall be using Arduino platform to make prototypes.
 			</p>
 		</div>
@@ -92,6 +101,7 @@
 	<div id="mobile-design" class="each-tour">
 		<div class="d-tour-desc">
 			<h4 class="title">Mobile App Design</h4>
+			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
 			<p>
 				The objective of the workshop is to make students go out in the real world, find contextual problems 
 				from their surroundings and come up with working prototypes of mobile app solutions.

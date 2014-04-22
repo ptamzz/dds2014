@@ -42,7 +42,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-body { line-height: 1; overflow: hidden; /* To avoid double scrollbar */}
 ol, ul { list-style: none;}
 blockquote, q { quotes: none;}
 blockquote:before, blockquote:after,
@@ -51,17 +50,17 @@ q:before, q:after { content: ''; content: none; }
 table { border-collapse: collapse; border-spacing: 0; }
 
 b, strong { font-weight: bold }
-i, em { font-style: italic}
+i, em { font-style: italic }
 
 p { margin-bottom: 10px; line-height: 1.4em; }
 
 
 body {
     font-family: 'fira_sans_otlight', sans-serif; line-height: 1.4em;
-    min-height: 740px;
     background-color: #eff2f5;
     -webkit-font-smoothing: antialiased;
     overflow: hidden;
+    line-height: 1;
 }
 
 .content { overflow: hidden; }
@@ -268,7 +267,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
         .projects i { background: url("../img/stack.png") no-repeat; background-size: 30px; }
         .alumni i { background: url("../img/social.png") no-repeat; background-size: 30px; }
         .sponsors i { background: url("../img/badge.png") no-repeat; background-size: 30px; }
-        .contact i { background: url("../img/contact.png") no-repeat; background-size: 30px; }
+        .contact i { background: url("../img/contact-icon.png") no-repeat; background-size: 30px; }
     .home .nav-title { font-size: 30px; font-weight: bold; }
 
 

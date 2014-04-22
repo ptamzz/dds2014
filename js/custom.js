@@ -7,7 +7,8 @@
 
 // JavaScript Document
 
-var page, //preset url hash value for home
+var e, 
+	page, //preset url hash value for home
 	view = false,	//false if loading for the first time
 	viewPane,
 	hover = false,	//pointer ouside .main-nav
@@ -20,38 +21,44 @@ $(function() {
 	dom = $('body, html');
 	winHeight = $(window).height();
 	winWidth = $(window).width();
+	setPixels(false);	//Set default width
 
 	//Mapping horizontal to vertical scroll
 	$(".content").mousewheel(function(event, delta) {
-		this.scrollLeft -= (delta * 5);
+		this.scrollLeft -= (delta * 9);
     	event.preventDefault();
-   });
-	
-
-	//Initial URL handling
-	page = getPage(window.location.hash); //return page from url
-	viewPane = (page != '' ? $("." + page+"-pane") : $('.home-pane') );	
-
-	doMagicTransition(viewPane, page);	//Show ViewPane
-
-	//HashBang handling without the "Bang" of course
-	$(window).bind('hashchange', function() {
-		view = true;	//true if loading for the 2nd & subsequent times
-		page =  getPage(window.location.hash);	//Get URL hash value "#/hashvalue" & remove "#/" 	
-
-		var e = $("."+page+"-pane");	//Get New viewPane
-
-		doMagicTransition(e, page);
 	});
 
-	//Setting viewport/container attributes
-	$('.st-menu, .main-nav').css({ height: winHeight });
-	$('.content').css({  'width' : winWidth, 'height': winHeight });
-	$('.logo-container, .body-bar').css({ 'top' : (winHeight/2) - 200 })
+	/*
+	$(window).keypress(function(e){
+		switch(e.which)
+		{
+			// Left Arrow
+			case 37:	goLeft();
+						break;	
+						
+			// Up Arrow
+			case 38:	goLeft();
+						break;
+						
+			// Down Arrow
+			case 40:	goRight();
+						break;
+						
+			// Right Assow
+			case 39:	goRight();
+						break;
+						
+		}
+	});*/
+
+	//Hash URL Handling
+	handleURL(false);													//handles URL on first time load
+	$(window).bind('hashchange', function() { handleURL(true);  });		//Handles URL on hashchange
+	
 
 	//Transition animation
 	$('.main-nav').hover( hoverIn, hoverOut);
-
 	$('.main-nav').click(function(e){ mouseY = e.clientY; });	//Set mouse-click coords - used to determine pointer move distance
 
 	//If pointer moves more than 20px on y-axis, call hoverIn
@@ -75,16 +82,54 @@ $(function() {
 	    }, 200);
 	});
 
-
 	//Playing bg video in slow motion
 	document.getElementById("bg-video").playbackRate=0.5;
+	
 
 }); // jQuery $(funtion() ends
+
+/*
+	$(window).resize(function() {
+		console.log("Resized");
+		setPixels();
+	});
+*/
+
+function handleURL(p){
+	page =  getPage(window.location.hash);	//Get URL hash value "#/hashvalue" & remove "#/" 
+
+	//2nd and subsequent loads (hashchange)
+	if(p){
+		view = true;	//true if loading for the 2nd & subsequent times
+		e = $("."+page+"-pane");	//Get New viewPane
+		doMagicTransition(e, page);
+	} else {
+		//Initial URL handling
+		viewPane = (page != '' ? $("." + page+"-pane") : $('.home-pane') );	
+		doMagicTransition(viewPane, page);	//Show ViewPane
+	}
+}
+
+
+//Set Heights & widths dynamicall
+function setPixels(p){
+	$('body').css({ 'overflow' : 'hidden' });
+	if(p){
+		//If true, then reset height+width
+		winHeight = $(window).height();
+		winWidth = $(window).width();
+	}
+
+	//Setting viewport/container attributes
+	$('.st-menu, .main-nav').css({ height: winHeight });
+	$('.content').css({  'width' : winWidth, 'height': winHeight });
+	$('.logo-container, .body-bar').css({ 'top' : (winHeight/2) - 200 });
+}
 
 
 //Effect for Nav MouseIn
 function hoverIn(){
-$(".content").animate({scrollLeft:0}, '500', 'swing', function(){ /* do nothing */ });
+	$(".content").animate({scrollLeft:0}, '500', 'swing', function(){ /* do nothing */ });
 	//Mouseover
 	$('.st-menu').css({ 
 		'-webkit-transform' : 'translate3d(0, 0, 0)',
