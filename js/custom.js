@@ -29,28 +29,18 @@ $(function() {
     	event.preventDefault();
 	});
 
-	/*
-	$(window).keypress(function(e){
-		switch(e.which)
-		{
-			// Left Arrow
-			case 37:	goLeft();
-						break;	
-						
-			// Up Arrow
-			case 38:	goLeft();
-						break;
-						
-			// Down Arrow
-			case 40:	goRight();
-						break;
-						
-			// Right Assow
-			case 39:	goRight();
-						break;
-						
-		}
-	});*/
+	//This piece of code is to disable scroll on arrow key
+	$(window).keydown(function(e) {
+	    // space and arrow keys
+	    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+	        e.preventDefault();
+	    }
+	}, false);
+
+	//Press escape to hover-out
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) { hoverOut(); }   // esc
+	});
 
 	//Hash URL Handling
 	handleURL(false);													//handles URL on first time load
@@ -111,7 +101,7 @@ function handleURL(p){
 }
 
 
-//Set Heights & widths dynamicall
+//Set Heights & widths dynamicaly
 function setPixels(p){
 	$('body').css({ 'overflow' : 'hidden' });
 	if(p){
@@ -139,7 +129,7 @@ function hoverIn(){
 	});
 
 	//Magic webkit 3D pan-tilt in
-	$('#st-container').addClass("st-menu-open");
+	$('.st-container').addClass("st-menu-open");
 	$('.st-pusher').removeClass('reverse-magic').addClass('magic');
 	$(".main-nav ul").animate({ 'width'  : 250 }, 450);
 
@@ -161,7 +151,7 @@ function hoverOut(){
     });
 
     //Magic webkit 3D pan-tilt out
-	$('#st-container').removeClass("st-menu-open");
+	$('.st-container').removeClass("st-menu-open");
 	$('.st-pusher').removeClass('magic').addClass('reverse-magic');
 
 	//Scroll to top-left

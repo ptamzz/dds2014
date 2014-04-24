@@ -5,9 +5,9 @@
     <title>Design Degree Show 2014, IDC, IIT Bombay</title>
     
     <meta name="description" content="The Annual Design Degree Show 2014, showcasing design works by students of the Industrial Design Centre, IIT Bombay">
-	<meta name="keyword" content="Design, Degree, Show, 2013, IDC, IIT, Bombay, Powai, Exhibition, Interaction, Visual, Communication, 
+	<meta name="keywords" content="Design, Degree, Show, 2013, IDC, IIT, Bombay, Powai, Exhibition, Interaction, Visual, Communication, 
 	Animation, Mobility, Vehicle, Product, Industrial, Centre, Center" />
-	<link rel="image_src" href="http://www.ddsidc.com/img/dds_preview.jpg" / >
+	<link rel="image_src" href="http://www.ddsidc.com/img/dds_preview.jpg" />
 
     <meta name="author" content="Pritam Pebam" />
     <link rel="shortcut icon" href="img/favicon.png">
@@ -63,55 +63,10 @@
 					<span class="nav-title">Contact</span>
 				</a>
 			</li>
-
-			<li class="d-tour">
-				<a href="#/d-tour">
-					<i class="icon"></i>
-					<span class="nav-title">About</span>
-				</a>
-			</li>
-			<li class="sponsors">
-				<a href="#/sponsors">
-					<i class="icon"></i>
-					<span class="nav-title">Alumni</span>
-				</a>
-			</li>
-			<li class="contact">
-				<a href="#/contact">
-					<i class="icon"></i>
-					<span class="nav-title">Registration</span>
-				</a>
-			</li>
-			<li class="d-tour">
-				<a href="#/d-tour">
-					<i class="icon"></i>
-					<span class="nav-title">Speakers</span>
-				</a>
-			</li>
-			<li class="sponsors">
-				<a href="#/sponsors">
-					<i class="icon"></i>
-					<span class="nav-title">Workshops</span>
-				</a>
-			</li>
-			<li class="contact">
-				<a href="#/contact">
-					<i class="icon"></i>
-					<span class="nav-title">Schedule</span>
-				</a>
-			</li>
-			<li class="contact">
-				<a href="#/contact">
-					<i class="icon"></i>
-					<span class="nav-title">Profile</span>
-				</a>
-			</li>
-
-
 		</ul>
 	</nav>
-	<div id="st-container" class="home-pane st-container st-effect-11">
 
+	<div class="home-pane st-container st-effect-11">
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 
@@ -127,7 +82,7 @@
 
 
 	<!-- d.tour -->
-	<div id="st-container" class="d-tour-pane st-container st-effect-11">
+	<div class="d-tour-pane st-container st-effect-11">
 		<!-- content push wrapper -->
 		<div class="st-pusher" style="background-color: #f4f4f4;" >
 			<div class="st-content"><!-- this is the wrapper for the content -->
@@ -141,7 +96,7 @@
 	</div><!-- /st-container -->
 
 	<!-- Workshops -->
-	<div id="st-container" class="workshops-pane st-container st-effect-11">
+	<div class="workshops-pane st-container st-effect-11">
 		<!-- content push wrapper -->
 		<div class="st-pusher" style="background-color: #f4f4f4;" >
 			<div class="st-content"><!-- this is the wrapper for the content -->
@@ -155,7 +110,7 @@
 	</div><!-- /st-container -->
 
 
-	<div id="st-container" class="sponsors-pane st-container st-effect-11">
+	<div class="sponsors-pane st-container st-effect-11">
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 			<div class="st-content"><!-- this is the wrapper for the content -->
@@ -168,7 +123,7 @@
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
 
-	<div id="st-container" class="contact-pane st-container st-effect-11">
+	<div class="contact-pane st-container st-effect-11">
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 			<div class="st-content"><!-- this is the wrapper for the content -->
@@ -180,6 +135,7 @@
 			</div><!-- /st-content -->
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
+
 
 	<div id="overlay"></div>
 	<div id="bg">
