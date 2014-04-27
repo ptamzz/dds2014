@@ -50,6 +50,7 @@
 		<div class="d-tour-desc">
 			<h4 class="title">Calligraphy Design</h4>
 			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
+			<p></p>
 			<p>
 				Calligraphy is an ancient art with historical and cultural significance in may parts of the world. Simply defined, 
 				calligraphy  means “beautiful writing”. The ability to create perfectly balanced and artful lettering is still a 
@@ -67,6 +68,7 @@
 		<div class="d-tour-desc">
 			<h4 class="title">Mobility & Vehicle Design</h4>
 			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
+			<p></p>
 			<p>
 				The tour will show an overall picture of the role of an automotive designer & the design process followed in the automotive 
 				industry.
@@ -84,6 +86,7 @@
 		<div class="d-tour-desc">
 			<h4 class="title">Hardware Innovation</h4>
 			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
+			<p></p>
 			<p>
 				The workshop's objective is to use the design process to come up with innovation ideas using a hardware prototyping platform. 
 				It's intended for engineers and DIY hobbyists who want to create interactive objects or environments.
@@ -102,6 +105,7 @@
 		<div class="d-tour-desc">
 			<h4 class="title">Mobile App Design</h4>
 			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
+			<p></p>
 			<p>
 				The objective of the workshop is to make students go out in the real world, find contextual problems 
 				from their surroundings and come up with working prototypes of mobile app solutions.
