@@ -224,7 +224,7 @@ function loadPage(p){
 				$('#contact-map, .google-maps').css({ 'width' : winWidth - 500, 'height' : winHeight });	//500 for the right each-tour
 			} else if (p == 'about'){
 				console.log("About");
-				$('#about-pic.each-tour').css({ 'width' : winWidth - 650 });
+				$('#about-pic.each-tour').css({ 'width' : winWidth - 650 + 55 });
 			} else if (p == 'alumni'){
 				console.log("Alumni");
 				$('#alumni-pic.each-tour').css({ 'width' : winWidth - 650 });

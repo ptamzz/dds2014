@@ -1,8 +1,8 @@
 <div class="isotope js-isotope" >
 	<div id="about-pic" class="each-tour" style="background-color: #333; margin-left: -55px;">
-		<p class="big-quote">
+		<!-- <p class="big-quote">
 			Design is a powerful medium to construct a better society
-		</p>
+		</p>-->
 	</div>
 	
 	<div id="about-info" class="each-tour">

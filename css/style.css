@@ -265,6 +265,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
         /*.workshops i { background: url("../img/edit.png") no-repeat; background-size: 30px; }*/
         .d-tour i { background: url("../img/edit.png") no-repeat; background-size: 30px; }
         .projects i { background: url("../img/stack.png") no-repeat; background-size: 30px; }
+        .about i { background: url("../img/about-icon.png") no-repeat; background-size: 30px; }
         .alumni i { background: url("../img/social.png") no-repeat; background-size: 30px; }
         .sponsors i { background: url("../img/badge.png") no-repeat; background-size: 30px; }
         .contact i { background: url("../img/contact-icon.png") no-repeat; background-size: 30px; }
@@ -344,16 +345,31 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
 .about-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
 #about-pic { background: url(../img/idc_front.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-    #about-pic .big-quote { position: absolute; top: 50%; left: 100px; color: rgb(214,223,35); width: 70%; }
+    #about-pic .big-quote { position: absolute; top: 10%; left: 100px; color: #FFE11A; width: 70%; }
+
+        #about-pic:after {
+            content: ''; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0;z-index: 10;
+            
+            /* For image Vignette Effect */
+            background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(2,0,0,0.45) 89%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(89%,rgba(2,0,0,0.45)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+            background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(2,0,0,0.45) 89%,rgba(0,0,0,0.8) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(2,0,0,0.45) 89%,rgba(0,0,0,0.8) 100%); /* Opera 12+ */
+            background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(2,0,0,0.45) 89%,rgba(0,0,0,0.8) 100%); /* IE10+ */
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(2,0,0,0.45) 89%,rgba(0,0,0,0.51) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#82000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        }
 #about-info { width: 600px; padding: 60px; }
 
 
 .alumni-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
-#alumni-pic { background: url(../img/idc_front.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+#alumni-pic { background: url(../img/alumni-2.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
     #alumni-pic .big-quote { position: absolute; top: 50%; left: 100px; color: rgb(214,223,35); width: 70%; }
 #alumni-info { width: 600px; padding: 60px; }
     .event-details { margin:  30px 0; }
     .event-details p { margin: 0; }
+
+    
     
     
 
