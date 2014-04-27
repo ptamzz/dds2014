@@ -341,6 +341,19 @@ h3 { font-size: 25px; line-height: 1.4em; }
     .contact-pane #contact-info.each-tour { width : 450px; }
         .address { color: rgba(255,255,255,.8); margin-top: 55px; }
             .address p { margin: 0;}
+
+.about-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+#about-pic { background: url(../img/idc_front.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    #about-pic .big-quote { position: absolute; top: 50%; left: 100px; color: rgb(214,223,35); width: 70%; }
+#about-info { width: 600px; padding: 60px; }
+
+
+.alumni-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+#alumni-pic { background: url(../img/idc_front.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    #alumni-pic .big-quote { position: absolute; top: 50%; left: 100px; color: rgb(214,223,35); width: 70%; }
+#alumni-info { width: 600px; padding: 60px; }
+    .event-details { margin:  30px 0; }
+    .event-details p { margin: 0; }
     
     
 

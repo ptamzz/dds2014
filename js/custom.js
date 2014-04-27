@@ -30,12 +30,14 @@ $(function() {
 	});
 
 	//This piece of code is to disable scroll on arrow key
+	/* 
 	$(window).keydown(function(e) {
 	    // space and arrow keys
 	    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
 	        e.preventDefault();
 	    }
 	}, false);
+	*/
 
 	//Press escape to hover-out
 	$(document).keyup(function(e) {
@@ -208,22 +210,29 @@ function loadPage(p){
 			$(".content").html(html);
 			$(".content").fadeIn();	
 
+			//Setting d.tour height
+			$('.each-tour').css({ 'height' : winHeight });
+
 			if(p == 'd-tour' || p == 'sponsors'){
-				//Setting d.tour height
-				$('.each-tour').css({ 'height' : winHeight });
+				
 				$( ".each-tour" ).each(function(i) {
 					var eHeight = $(this).children('.d-tour-desc').height();
 					$(this).children('.d-tour-pic').css({ 'height' : 	winHeight - eHeight - 100 });
-					if(i%2 == 0){ $(this).children('.d-tour-pic').css({ 'position' : 'absolute', 'bottom' : 0 }); }
+					if(i%2 == 0){ $(this).children('.d-tour-pic').css({ 'position' : 'absolute', 'bottom' : 0 }); }	//even .each-tour
 				});
-
 			} else if (p == 'contact'){
-				$('#contact-map, .google-maps').css({ 'width' : winWidth - 500, 'height' : winHeight });	//450 for the right each-tour
-			} 
+				$('#contact-map, .google-maps').css({ 'width' : winWidth - 500, 'height' : winHeight });	//500 for the right each-tour
+			} else if (p == 'about'){
+				console.log("About");
+				$('#about-pic.each-tour').css({ 'width' : winWidth - 650 });
+			} else if (p == 'alumni'){
+				console.log("Alumni");
+				$('#alumni-pic.each-tour').css({ 'width' : winWidth - 650 });
+			}
 
 			var $container = $('.isotope');
 			$container.css({ 'height' : winHeight });
-			// init Isotoppe
+			// init Isotope
 			$container.isotope({
 			  // options
 			  itemSelector: '.each-tour',
