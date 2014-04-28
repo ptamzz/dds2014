@@ -25,7 +25,7 @@ $(function() {
 
 	//Mapping horizontal to vertical scroll
 	$(".content").mousewheel(function(event, delta) {
-		this.scrollLeft -= (delta * 9);
+		this.scrollLeft -= (delta * 15);
     	event.preventDefault();
 	});
 
@@ -185,7 +185,7 @@ function doMagicTransition(e, page){
     	if(view){
     		viewPane.hide(10, function(){
 	    		viewPane = e; //Reset current pane in view
-	    		dom.css({ 'overflow' : 'hidden' });
+	    		dom.css({ 'overflow-y' : 'hidden' });
 	    	});
     	}
     });
@@ -206,7 +206,7 @@ function loadPage(p){
 			
 
 			console.log("LoadPage Returned");
-			$('.content').css({ 'overflow' : 'hidden' });
+			$('.content').css({ 'overflow-y' : 'hidden' });
 			$(".content").html(html);
 			$(".content").fadeIn();	
 
@@ -220,11 +220,10 @@ function loadPage(p){
 					$(this).children('.d-tour-pic').css({ 'height' : 	winHeight - eHeight - 100 });
 					if(i%2 == 0){ $(this).children('.d-tour-pic').css({ 'position' : 'absolute', 'bottom' : 0 }); }	//even .each-tour
 				});
-			} else if (p == 'contact'){
-				$('#contact-map, .google-maps').css({ 'width' : winWidth - 500, 'height' : winHeight });	//500 for the right each-tour
 			} else if (p == 'about'){
 				console.log("About");
-				$('#about-pic.each-tour').css({ 'width' : winWidth - 650 + 55 });
+				$('#about-pic.each-tour').css({ 'width' : winWidth - 950 });
+				$('#contact-map, .google-maps').css({ 'width' : '100%', 'height' : winHeight });	//500 for the right each-tour
 			} else if (p == 'alumni'){
 				console.log("Alumni");
 				$('#alumni-pic.each-tour').css({ 'width' : winWidth - 650 });

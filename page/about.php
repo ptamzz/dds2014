@@ -1,10 +1,4 @@
 <div class="isotope js-isotope" >
-	<div id="about-pic" class="each-tour" style="background-color: #333; margin-left: -55px;">
-		<!-- <p class="big-quote">
-			Design is a powerful medium to construct a better society
-		</p>-->
-	</div>
-	
 	<div id="about-info" class="each-tour">
 		<div class="reverse-quote reverse-quote-yellow">About Us</div>
 		<div class="contact-list">
@@ -28,11 +22,25 @@
 				IDC have been key players in eminent companies and research labs including <span class="meta-two">Google, Microsoft, Yahoo,
 				Lego, Volvo, Samsung, Zynga and MIT Media Labs</span>.
 			</p>
-			
+		</div>
+	</div>
+	<div id="contact-info" class="each-tour">
+		<div class="quote">Contact Us</div>
+		<div class="contact-list">
+			<ul>
+				<li class="meta-two"><a href="mailto:contact@ddsidc.com"><span class="yellow">contact</span>@ddsidc.com</a></li>
+				<li class="meta-two"><a href="mailto:sponsorship@ddsidc.com"><span class="yellow">sponsorship</span>@ddsidc.com</a></li>
+			</ul>
+			<div class="address">
+				<p class="quote">Industrial Design Centre</p>
+				<p>Indian Institute of Technology Bombay,</p>
+				<p>Powai, Mumbai – 400 076, India.</p>
+				<p><span class="glyphicon glyphicon-phone"></span> 022 257 67 801</p>
+			</div>
 			<div class="address">
 				<p><a href="http://www.idc.iitb.ac.in" target="_blank">www.idc.iitb.ac.in</a></p>
 			</div>
 		</div>
 	</div>
-	<img style="position: absolute; bottom: 0; right: 0;" src="img/boxy.png" alt="Boxy">
+	<div id="about-pic" class="each-tour" style="background-color: #333;"></div>
 </div>

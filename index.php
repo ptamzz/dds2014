@@ -45,36 +45,40 @@
 					<span class="nav-title">DDS 2014</span>
 				</a>
 			</li>
-			<li class="d-tour">
-				<a href="#/d-tour">
-					<i class="icon"></i>
-					<span class="nav-title">d.tour</span>
-				</a>
-			</li>
-			<li class="sponsors">
-				<a href="#/sponsors">
-					<i class="icon"></i>
-					<span class="nav-title">Sponsors</span>
-				</a>
-			</li>
-			<li class="alumni">
-				<a href="#/alumni">
-					<i class="icon"></i>
-					<span class="nav-title">Alumni</span>
-				</a>
-			</li>
 			<li class="about">
 				<a href="#/about">
 					<i class="icon"></i>
 					<span class="nav-title">About</span>
 				</a>
 			</li>
-			<li class="contact">
-				<a href="#/contact">
+
+			<li class="d-tour">
+				<a href="#/d-tour">
 					<i class="icon"></i>
-					<span class="nav-title">Contact</span>
+					<span class="nav-title">d.tour</span>
 				</a>
 			</li>
+			<!-- <li class="sponsors">
+				<a href="#/sponsors">
+					<i class="icon"></i>
+					<span class="nav-title">Sponsors</span>
+				</a>
+			</li> -->
+			<li class="alumni">
+				<a href="#/alumni">
+					<i class="icon"></i>
+					<span class="nav-title">Alumni</span>
+				</a>
+			</li>
+			
+			<!-- 
+				<li class="contact">
+					<a href="#/contact">
+						<i class="icon"></i>
+						<span class="nav-title">Contact</span>
+					</a>
+				</li>
+			-->
 		</ul>
 	</nav>
 
@@ -82,6 +86,20 @@
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<div class="main clearfix">
+						<div class="content"><!-- content will come here --></div>
+					</div><!-- /main -->
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+
+
+	<div class="about-pane st-container st-effect-11">
+		<!-- content push wrapper -->
+		<div class="st-pusher">
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
@@ -136,32 +154,6 @@
 	</div><!-- /st-container -->
 
 	<div class="alumni-pane st-container st-effect-11">
-		<!-- content push wrapper -->
-		<div class="st-pusher">
-			<div class="st-content"><!-- this is the wrapper for the content -->
-				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-					<div class="main clearfix">
-						<div class="content"><!-- content will come here --></div>
-					</div><!-- /main -->
-				</div><!-- /st-content-inner -->
-			</div><!-- /st-content -->
-		</div><!-- /st-pusher -->
-	</div><!-- /st-container -->
-
-	<div class="about-pane st-container st-effect-11">
-		<!-- content push wrapper -->
-		<div class="st-pusher">
-			<div class="st-content"><!-- this is the wrapper for the content -->
-				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-					<div class="main clearfix">
-						<div class="content"><!-- content will come here --></div>
-					</div><!-- /main -->
-				</div><!-- /st-content-inner -->
-			</div><!-- /st-content -->
-		</div><!-- /st-pusher -->
-	</div><!-- /st-container -->
-
-	<div class="contact-pane st-container st-effect-11">
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 			<div class="st-content"><!-- this is the wrapper for the content -->
