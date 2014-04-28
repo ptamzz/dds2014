@@ -28,7 +28,7 @@
 	<div id="contact-info" class="each-tour">
 		<div class="quote">Contact Us</div>
 		<div class="contact-list">
-			<ul>
+			<ul class="item-list">
 				<li class="meta-two"><a href="mailto:contact@ddsidc.com">contact@ddsidc.com</a></li>
 				<li class="meta-two"><a href="mailto:sponsorship@ddsidc.com">sponsorship@ddsidc.com</a></li>
 			</ul>

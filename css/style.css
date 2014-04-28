@@ -117,6 +117,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 #bg video { position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;min-width: 50%; min-height: 50%; }
 #overlay { background: url(../img/pattern.png); position: fixed; background-repeat: repeat; top: 0; left: 0; min-width: 100%; min-height: 100%; z-index: 1; }
 
+.item-list li { margin-bottom: 5px; }
 
 .small-icon { width: 40px; float: left; margin-left: -55px; margin-top: -15px; }
         .main-title { font-size: 30px; font-family: 'fira_sans_otbold', sans-serif; margin-bottom: 20px; }
@@ -275,7 +276,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
 
 .meta-one { font-family: "fira_sans_otmedium", sans-serif; }
-.meta-two { font-family: "fira_sans_otlight", sans-serif; }
+.meta-two { font-family: "fira_sans_otregular", sans-serif; }
     .meta-two .name-list { list-style: none; margin: -20px 0 15px 25px; }
 
 /* isotope for Masonry Layout */
