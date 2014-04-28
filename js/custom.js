@@ -25,7 +25,7 @@ $(function() {
 
 	//Mapping horizontal to vertical scroll
 	$(".content").mousewheel(function(event, delta) {
-		this.scrollLeft -= (delta * 15);
+		this.scrollLeft -= (delta * 25);
     	event.preventDefault();
 	});
 

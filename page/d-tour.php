@@ -1,8 +1,8 @@
 
 <div class="isotope js-isotope" >
 	<div class="each-tour">
-	
-		<h3 class="title">d.tour</h3>
+
+		<div class="reverse-quote reverse-quote-yellow">d.tour</div>
 		<div class="teaser right">
 			<p class="quote">Learning is more effective when it is an active rather than a passive process.</p>
 			<p>
@@ -11,7 +11,7 @@
 				across various campuses in Mumbai.
 			</p>
 			<p class="meta-one">Interested in bringing this tour to your campus?</p>
-			<p class="meta-two">Contact: Sajal Nagwanshi | <a href="mailto:sajal147@iitb.ac.in">sajal147@iitb.ac.in</a></p>
+			<p class="meta-two">Contact: Sajal Nagwanshi at <a href="mailto:sajal147@iitb.ac.in">sajal147@iitb.ac.in</a></p>
 		</div>
 	</div>
 

@@ -13,10 +13,11 @@
 				research into several aspects of design are experimented with to continuously revitalize the academic 
 				programmes at IDC. 
 			</p>
-			<p>
+			<!-- <p>
 				IDC offers a 2 years Master of Design programme in Industrial Design, Visual Communication, Interaction Design, Anumation Design,
 				& Mobility and Vehicle Design. IDC also has a Ph.D programme which attracts design researchers across the nation.
 			</p>
+			-->
 			<p>
 				IDC graduates have contributed to every major field of design, all across the world. Alumni from 
 				IDC have been key players in eminent companies and research labs including <span class="meta-two">Google, Microsoft, Yahoo,
@@ -28,8 +29,8 @@
 		<div class="quote">Contact Us</div>
 		<div class="contact-list">
 			<ul>
-				<li class="meta-two"><a href="mailto:contact@ddsidc.com"><span class="yellow">contact</span>@ddsidc.com</a></li>
-				<li class="meta-two"><a href="mailto:sponsorship@ddsidc.com"><span class="yellow">sponsorship</span>@ddsidc.com</a></li>
+				<li class="meta-two"><a href="mailto:contact@ddsidc.com">contact@ddsidc.com</a></li>
+				<li class="meta-two"><a href="mailto:sponsorship@ddsidc.com">sponsorship@ddsidc.com</a></li>
 			</ul>
 			<div class="address">
 				<p class="quote">Industrial Design Centre</p>

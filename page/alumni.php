@@ -1,6 +1,6 @@
 <div class="isotope js-isotope" >
 	<div id="alumni-info" class="each-tour">
-		<div class="reverse-quote reverse-quote-yellow">ALUMNI RENDEZVOUS 2014</div>
+		<div class="reverse-quote reverse-quote-yellow">Alumni Rendezvous 2014</div>
 		<div class="contact-list">
 			<p>
 				It’s that time of year again! Team DDS takes great pleasure in welcoming home it’s alumni to 
@@ -19,13 +19,8 @@
 				accommodation so that appropriate arrangements can be made.
 			</p>
 
-			<p class="meta-two">RSVP to <a href="mailto:contact@ddsidc.com">contact@ddsidc.com</a></p>
-
+			<p class="meta-two">RSVP Prashant Sachan at <a href="mailto:prashant.sachan@iitb.ac.in">prashant.sachan@iitb.ac.in</a></p>
 			<p>See you soon!</p>
-
-			<div class="address">
-				<p><a href="http://www.idc.iitb.ac.in" target="_blank">www.idc.iitb.ac.in</a></p>
-			</div>
 		</div>
 	</div>
 	<div id="alumni-pic" class="each-tour" style="background-color: #333;"></div>
