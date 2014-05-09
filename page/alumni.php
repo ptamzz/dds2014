@@ -19,7 +19,7 @@
 				accommodation so that appropriate arrangements can be made.
 			</p>
 
-			<p class="meta-two">RSVP Prashant Sachan at <a href="mailto:prashant.sachan@iitb.ac.in">prashant.sachan@iitb.ac.in</a></p>
+			<p class="meta-two">RSVP at <a href="mailto:contact@ddsidc.com">contact@ddsidc.com</a></p>
 			<p>See you soon!</p>
 		</div>
 	</div>

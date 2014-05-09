@@ -261,18 +261,20 @@ h3 { font-size: 25px; line-height: 1.4em; }
         .main-nav ul li a i { display: block; float: left; }
         .main-nav ul li a span.nav-title { display: block; float: left; margin-left: 15px; font-size: 15px; margin-top: 7px; }
 
-.icon { display: inline-block; width: 30px; height: 35px; }
+.home .icon { height: 35px; }
+.icon { display: inline-block; width: 25px; height: 25px; }
 
-        .home i { background: url("../img/dds_main_icon.png") no-repeat; background-size: 30px; }
-        .speakers i { background: url("../img/mic.png") no-repeat; background-size: 30px; }
-        /*.workshops i { background: url("../img/edit.png") no-repeat; background-size: 30px; }*/
-        .d-tour i { background: url("../img/edit.png") no-repeat; background-size: 30px; }
-        .projects i { background: url("../img/stack.png") no-repeat; background-size: 30px; }
-        .about i { background: url("../img/about-icon.png") no-repeat; background-size: 30px; }
-        .alumni i { background: url("../img/social.png") no-repeat; background-size: 30px; }
-        .sponsors i { background: url("../img/badge.png") no-repeat; background-size: 30px; }
-        .contact i { background: url("../img/contact-icon.png") no-repeat; background-size: 30px; }
+        .home i { background: url("../img/dds_main_icon.png") no-repeat; background-size: 25px; }
+        .speakers i { background: url("../img/icons/speakers.png") no-repeat; background-size: auto 25px; background-position: 50% 50%;}
+        /*.workshops i { background: url("../img/edit.png") no-repeat; background-size: 25px; }*/
+        .d-tour i { background: url("../img/icons/dtour.png") no-repeat; background-size: 25px; }
+        .projects i { background: url("../img/icons/projects.png") no-repeat; background-size: 25px; }
+        .about i { background: url("../img/icons/about.png") no-repeat; background-size: 25px; }
+        .alumni i { background: url("../img/icons/alumni.png") no-repeat; background-size: 23px; background-position: 50% 50%; }
+        .sponsors i { background: url("../img/icons/sponsor.png") no-repeat; background-size: 25px; }
+        .contact i { background: url("../img/icons/contact.png") no-repeat; background-size: 18px; background-position: 50% 50%; }
     .home .nav-title { font-size: 30px; font-weight: bold; }
+        .nav-title { font-family: "fira_sans_otregular", sans-serif; font-size: 30px; }
 
 
 .meta-one { font-family: "fira_sans_otmedium", sans-serif; }
@@ -359,6 +361,43 @@ h3 { font-size: 25px; line-height: 1.4em; }
 #alumni-info { width: 600px; padding: 60px; }
     .event-details { margin:  30px 0; }
     .event-details p { margin: 0; }
+
+
+/* *******speakers *************** */
+.speakers-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+.speakers-pane .content h3.title, h3.title { font-family: 'fira_sans_otbold', sans-serif; font-size: 50px; color: #00A79D; padding: 0; }
+.speakers {  width: 1200px;}
+.speakers .speaker-list { margin-top:20px;}
+.speakers #about-speakers { float:left; width: 600px; margin-left: -60px; padding:60px;}
+.speaker .speakers-desc { float:left; margin-top: 10px;}
+.speaker .speakers-desc p {margin-bottom:0px;} 
+.speaker .speakers-desc .meta-one {margin-bottom:10px;}
+.speaker .speakers-desc span{padding-right: 5px;}
+.speakers .speaker {float:left; margin-right: 35px; margin-top:30px; color: #404041; padding:0;}
+.speaker .speakers-pic { background: url(../img/Speaker1.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
+#indian-speakers {margin-left:174px;}
+.speakers-pane .content .speaker-tour:first-child {width:1200px; padding:60px;}
+.speaker-tour { float:left; min-width:600px; height:100%;}
+td {vertical-align:top;}
+.speaker-tour h4.title { font-size: 30px; margin: 15px 0 10px 0; }
+
+#speaker-col2 { width:670px; height: 100 %; background-color: #486BB3; color: #FFF;}
+#speaker-col2 p {width:550px;}
+#speaker-col2 .speaker-desc {padding-top: 20px;}
+#speaker-col3 { width:670px; height: 100 %; background-color: #099948; color: #FFF;}
+#speaker-col3 p {width:550px;}
+#speaker-col3 .speaker-desc {padding-top: 20px;}
+#speaker-col4 { width:670px; height: 100 %; background-color: #D61F2F; color: #FFF;}
+#speaker-col4 p {width:550px;}
+#speaker-col4 .speaker-desc {padding-top: 20px;}
+#speaker-col5 { width:670px; height: 100 %; background-color: #F15925; color: #FFF;}
+#speaker-col5 p {width:550px;}
+#speaker-col5 .speaker-desc {padding-top: 20px;}
+#speaker-col6 { width:670px; height: 100 %; background-color: #0D6194; color: #FFF;}
+#speaker-col6 p {width:550px;}
+#speaker-col6 .speaker-desc {padding-top: 20px;}
+
+.speaker-profile {padding-left:20px;}
 
     
     

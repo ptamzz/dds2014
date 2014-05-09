@@ -45,6 +45,12 @@
 					<span class="nav-title">DDS 2014</span>
 				</a>
 			</li>
+			<!-- <li class="speakers">
+				<a href="#/speakers">
+					<i class="icon"></i>
+					<span class="nav-title">Speakers</span>
+				</a>
+			</li> -->
 			<li class="d-tour">
 				<a href="#/d-tour">
 					<i class="icon"></i>
@@ -60,7 +66,7 @@
 			<li class="alumni">
 				<a href="#/alumni">
 					<i class="icon"></i>
-					<span class="nav-title">Alumni</span>
+					<span class="nav-title">Alumni Rendezvous</span>
 				</a>
 			</li>
 			
@@ -95,6 +101,21 @@
 			</div><!-- /st-content -->
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
+
+	<!-- Speakers -->
+	<div class="speakers-pane st-container st-effect-11">
+		<!-- content push wrapper -->
+		<div class="st-pusher" style="background-color: #f4f4f4;" >
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<div class="main clearfix">
+						<div class="content"><!-- content will come here --></div>
+					</div><!-- /main -->
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+
 
 	<!-- d.tour -->
 	<div class="d-tour-pane st-container st-effect-11">
