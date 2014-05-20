@@ -23,9 +23,11 @@
 	</p>
 	<p class="quote-meta">- Deconstructing Product Design, WILLIAM LIDWELL</p>
 
-	<p>The term deconstruction was coined by the French philosopher Jacques Derrida, in his 1967 book 
-		of Grammatology, and deconstruction itself grew out of semiotics theory.</p>
-
+	<p>
+		Design and Degree Show (DDS) 2014 is the annual design conference and showcase of design and works by the 
+		graduating batch of IDC. DDS 2014 with the theme de.cons.truct with a series of flagship events aims to spread design.
+	</p>
+	<p><a href="#/about" class="small-two">read more</a></p>
 	<div class="social">
 		<a href="https://www.facebook.com/designdegreeshow" target="_blank"><img src="img/dds_facebook.png" alt="DDS Facebook Link"></a>
 		<a href="https://twitter.com/idc_iitb" target="_blank"><img src="img/dds_twitter.png" alt="DDS Facebook Link"></a>

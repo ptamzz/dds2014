@@ -64,32 +64,32 @@
 	  						<td>  <div class="speaker-profile"><h4 class="title">Anil K Gupta</h4>
 							<p class="meta-one"><span class="glyphicon glyphicon-time"></span>&nbsp;25 June, 10 AM - 6 PM</p> <br> 
 							<p > Professor,Indian Institute of
-Management, Ahmedabad <br>
-Coordinator,SRISTI and Honey Bee
-Network <br> Executive Vice Chair,
-National Innovation Foundation </p>
-</div>
+								Management, Ahmedabad <br>
+								Coordinator,SRISTI and Honey Bee
+								Network <br> Executive Vice Chair,
+								National Innovation Foundation </p>
+	</div>
 						</td>
 	  					</tr>
 	  					<tr> <td colspan="2"> <div class="speaker-desc">
-		 <p> He is currently a professor in the Centre for Management in Agriculture.
-His unique work analysing indigenous knowledge of farmers and
-pastoralists and building bridges to science based knowledge has led
-to the honour of being elected at a young age to India’s National
-Academy of Agricultural Sciences and recognition through Pew Conservation
-Scholar Award 1993 96 from University of Michigan. </p>
-<p>His desire to develop a platform to recognise, respect and reward
-local innovators was the stimulus behind the creation of the Honey
-Bee network. </p>
-<p>To help provide support structures for grass roots innovators and
-link formal and informal knowledge systems, SRISTI, a global initiative
-and an NGO, to network local innovators was established in 1993.
-It provides organisational support to the Honey Bee network in over
-70 countries. it mobilized more than 124,000 ideas, traditional knowledge
-practices and innovations from informal sector by march 2009. </p>
-<p>Dr. Anil Gupta helped to establish NIF (National Innovation Foundation,
-India) (February 2000) with a view to help India become an</p>
-</div>
+							 <p> He is currently a professor in the Centre for Management in Agriculture.
+							His unique work analysing indigenous knowledge of farmers and
+							pastoralists and building bridges to science based knowledge has led
+							to the honour of being elected at a young age to India’s National
+							Academy of Agricultural Sciences and recognition through Pew Conservation
+							Scholar Award 1993 96 from University of Michigan. </p>
+							<p>His desire to develop a platform to recognise, respect and reward
+							local innovators was the stimulus behind the creation of the Honey
+							Bee network. </p>
+							<p>To help provide support structures for grass roots innovators and
+							link formal and informal knowledge systems, SRISTI, a global initiative
+							and an NGO, to network local innovators was established in 1993.
+							It provides organisational support to the Honey Bee network in over
+							70 countries. it mobilized more than 124,000 ideas, traditional knowledge
+							practices and innovations from informal sector by march 2009. </p>
+							<p>Dr. Anil Gupta helped to establish NIF (National Innovation Foundation,
+							India) (February 2000) with a view to help India become an</p>
+	</div>
 	  					</td> 				
 	  					</tr>
 	  				</table>

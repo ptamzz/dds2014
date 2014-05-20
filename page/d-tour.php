@@ -1,17 +1,22 @@
-
 <div class="isotope js-isotope" >
 	<div class="each-tour">
 
 		<div class="reverse-quote reverse-quote-yellow">d.tour</div>
-		<div class="teaser right">
+		<div class="teaser left">
 			<p class="quote">Learning is more effective when it is an active rather than a passive process.</p>
 			<p>
-				In an attempt to give students a hands-on experience of the design process, through which students 
-				can solve real world problems by using technical skills, students of IDC would be conducting workshops 
-				across various campuses in Mumbai.
+				In an attempt to give students a hands-on experience of the design process, through which they can 
+				solve real world problems by using technical skills, students of IDC would be conducting the d.Tour 
+				workshop prior to the actual event.
 			</p>
-			<p class="meta-one">Interested in bringing this tour to your campus?</p>
-			<p class="meta-two">Contact: Sajal Nagwanshi at <a href="mailto:sajal147@iitb.ac.in">sajal147@iitb.ac.in</a></p>
+			<p class="meta-one">Event Date and Venue:</p>
+			<p>June 14, 2014, Industrial Design Centre, IIT Bombay, Powai, Mumbai</p>
+			<p class="meta-two" style="margin-top: 35px;">
+				<a class="reg-button" href="http://dtourdds.doattend.com/" target="_blank">Register for the workshop now*</a>
+			</p>
+			<br/>
+			<p class="small-meta">The event registration costs ₹ 200 which will be refunded to the participants along with their participation certificates.</p>
+			<p class="small-meta">*Limited Seats</p>
 		</div>
 	</div>
 
@@ -112,8 +117,6 @@
 			</p>
 		</div>
 		<div class="d-tour-pic"></div>
-	</div>
-	<div class="each-tour">
 	</div>
 </div>
 

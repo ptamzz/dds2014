@@ -117,6 +117,9 @@ h3 { font-size: 25px; line-height: 1.4em; }
 #bg video { position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;min-width: 50%; min-height: 50%; }
 #overlay { background: url(../img/pattern.png); position: fixed; background-repeat: repeat; top: 0; left: 0; min-width: 100%; min-height: 100%; z-index: 1; }
 
+.reg-button { padding: 10px 15px; background: #00A79D; color: #FFF !important; text-decoration: none !important; }
+.reg-button:hover { padding: 10px 15px; background: #2ECAC1; color: #FFF !important; }
+
 .item-list li { margin-bottom: 5px; }
 
 .small-icon { width: 40px; float: left; margin-left: -55px; margin-top: -15px; }
@@ -271,6 +274,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
         .projects i { background: url("../img/icons/projects.png") no-repeat; background-size: 25px; }
         .about i { background: url("../img/icons/about.png") no-repeat; background-size: 25px; }
         .alumni i { background: url("../img/icons/alumni.png") no-repeat; background-size: 23px; background-position: 50% 50%; }
+        .schedule i { background: url("../img/icons/schedule.png") no-repeat; background-size: 23px; background-position: 50% 50%; }
         .sponsors i { background: url("../img/icons/sponsor.png") no-repeat; background-size: 25px; }
         .contact i { background: url("../img/icons/contact.png") no-repeat; background-size: 18px; background-position: 50% 50%; }
     .home .nav-title { font-size: 30px; font-weight: bold; }
@@ -297,9 +301,9 @@ h3 { font-size: 25px; line-height: 1.4em; }
 #mobile-design { background-color: #8DB03F; color: #FFF; }
 
 
-    .d-tour-pane .content .each-tour:first-child { width: 600px; padding: 20px 35px }
+    .d-tour-pane .content .each-tour:first-child { width: 600px; padding: 60px; }
     .each-tour { float: left; min-height: 700px;  width: 500px; min-height: 100px; }
-    .d-tour-pane .each-tour:last-child { width: 50px; background-color: #7B9630; color: #FFF; }
+    /*.d-tour-pane .each-tour:last-child { width: 50px; background-color: #7B9630; color: #FFF; }*/
 
         .each-tour h4.title { font-size: 30px; margin: 15px 0 10px 0; }
             .d-tour-pic { height: 350px; width: 100%; }
@@ -323,8 +327,8 @@ h3 { font-size: 25px; line-height: 1.4em; }
                 #hardware-design .d-tour-pic { background: url(../img/hardware-workshop.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
                 #mobile-design .d-tour-pic { background: url(../img/mob-app-workshop.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
             .d-tour-desc { padding: 25px 35px; }
-    .each-tour:first-child .quote { margin-top: 55px; color: #6B0A29; } 
-    .each-tour .teaser { width: 450px; margin-top: 25px; color: #404041; }
+    .each-tour:first-child .quote { color: #6B0A29; } 
+    .each-tour .teaser { width: 450px; color: #404041; }
         .each-tour .teaser .meta-one { margin-top: 30px; }
 
 
@@ -348,11 +352,12 @@ h3 { font-size: 25px; line-height: 1.4em; }
             .address p { margin: 0; }
 
 /* ********** About ******** */
-.about-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+.about-pane .content { background-color: #FFF; }
+.about-pane .content .isotope  { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
 #about-pic { background: url(../img/idc_front.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
     #about-pic .big-quote { position: absolute; top: 10%; left: 100px; color: #FFE11A; width: 70%; }
 #about-info { width: 550px; padding: 60px; }
-.about-pane #contact-info.each-tour { width : 350px; padding: 130px 0 0 0; }
+.about-pane #contact-info.each-tour { width : 350px; padding: 130px 0 0 0; margin-left: 55px; }
 
 /* ********** Alumni ******** */
 .alumni-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
@@ -362,6 +367,23 @@ h3 { font-size: 25px; line-height: 1.4em; }
     .event-details { margin:  30px 0; }
     .event-details p { margin: 0; }
 
+/* ********** Schedule ******* */
+.schedule-pane .content .isotope { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+#schedule-info { padding: 60px;}
+    .schedule-pane .schedule-desc { margin-left: 25px; padding: 115px 35px 0 35px; }
+    .schedule-pane .each-tour:nth-child(1) .reverse-quote { margin: 60px 0 0 60px; }
+    .schedule-pane .each-tour:nth-child(1) .schedule-desc { padding-top: 25px; margin-left: 25px; }
+        .schedule-pane .each-tour:nth-child(2), .schedule-pane .each-tour:nth-child(3) { background-color: #EB3D68; color: #FFF; }
+        .schedule-pane .each-tour:nth-child(4), .schedule-pane .each-tour:nth-child(5) { background-color: #4ECDC4; color: #FFF; }
+
+    .event-date { font-size: 18px; margin-top: 5px; }
+
+    .schedule-list { margin-top: 25px; }
+    .schedule-pane .schedule-desc .meta-two { margin-bottom: 15px; }
+        .schedule-pane .schedule-desc .meta-two:after { content: ' '; display: block; clear: both; }
+        .schedule-pane .schedule-desc .meta-two .time { padding-top: 3px; width: 100px; font-size: 14px; text-align: right; }
+        .schedule-pane .schedule-desc .meta-two .event { padding-left: 10px; width: 300px; line-height: 1.4em; }
+#schedule-pic { background: url(../img/sea-link.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 /* *******speakers *************** */
 .speakers-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }

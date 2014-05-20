@@ -69,6 +69,12 @@
 					<span class="nav-title">Alumni Rendezvous</span>
 				</a>
 			</li>
+			<li class="schedule">
+				<a href="#/schedule">
+					<i class="icon"></i>
+					<span class="nav-title">Schedule</span>
+				</a>
+			</li>
 			
 			<li class="about">
 				<a href="#/about">
@@ -160,6 +166,19 @@
 	</div><!-- /st-container -->
 
 	<div class="alumni-pane st-container st-effect-11">
+		<!-- content push wrapper -->
+		<div class="st-pusher">
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<div class="main clearfix">
+						<div class="content"><!-- content will come here --></div>
+					</div><!-- /main -->
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+
+	<div class="schedule-pane st-container st-effect-11">
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 			<div class="st-content"><!-- this is the wrapper for the content -->
