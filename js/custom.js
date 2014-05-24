@@ -76,7 +76,19 @@ $(function() {
 
 	//Playing bg video in slow motion
 	document.getElementById("bg-video").playbackRate=0.5;
-	
+
+	//Load Speaker Profile 
+	$(".speakers-pane").on("click", ".speaker", function(){
+		console.log(".speaker clicked");
+		
+		getOverlay();
+
+		$(".independent").show();
+		$(".independent").animate({
+			'right' : '0'
+		}, 100, "swing");
+	});
+
 
 }); // jQuery $(funtion() ends
 
@@ -86,6 +98,14 @@ $(function() {
 		setPixels();
 	});
 */
+
+function getOverlay(){
+	$("#overlay").css({ 'z-index' : 10 });
+}
+
+function removeOverlay(){
+	$("#overlay").css({ 'z-index' : 1 });
+}
 
 function handleURL(p){
 	page =  getPage(window.location.hash);	//Get URL hash value "#/hashvalue" & remove "#/" 
@@ -121,6 +141,15 @@ function setPixels(p){
 
 //Effect for Nav MouseIn
 function hoverIn(){
+	//Hide independent 
+	$(".independent").animate({
+			'right' : '-700'
+	}, 100, "swing", function(){
+		$(".independent").hide();
+		removeOverlay();
+	});
+
+
 	$(".content").animate({scrollLeft:0}, '500', 'swing', function(){ /* do nothing */ });
 	//Mouseover
 	$('.st-menu').css({ 
@@ -227,16 +256,29 @@ function loadPage(p){
 			} else if (p == 'alumni'){
 				console.log("Alumni");
 				$('#alumni-pic.each-tour').css({ 'width' : winWidth - 650 });
+			} else if (p == 'speakers'){
+				console.log("Speakers");
+				$('.independent').css({ 'height' : winHeight });
 			}
+
+			if(p != "registrations"){
+				$("#reg-hotlink").animate({ 'top' : 0 }, '1000', 'swing' );
+			}
+
 
 			var $container = $('.isotope');
 			$container.css({ 'height' : winHeight });
+
 			// init Isotope
 			$container.isotope({
 			  // options
 			  itemSelector: '.each-tour',
-			  layoutMode: 'masonryHorizontal'
+			  layoutMode: 'masonryHorizontal',
+			  masonryHorizontal: {
+				  rowHeight: 100
+				}
 			});
+			
 		}
 	});
 }

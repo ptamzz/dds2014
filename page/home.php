@@ -24,8 +24,9 @@
 	<p class="quote-meta">- Deconstructing Product Design, WILLIAM LIDWELL</p>
 
 	<p>
-		Design and Degree Show (DDS) 2014 is the annual design conference and showcase of design and works by the 
-		graduating batch of IDC. DDS 2014 with the theme de.cons.truct with a series of flagship events aims to spread design.
+		Design and Degree Show (DDS) 2014 is the annual design conference and showcase of design & works by the 
+		graduating batch of IDC. DDS 2014, with the theme de.cons.truct, is a series of flagship events that aim 
+		to spread design.
 	</p>
 	<p><a href="#/about" class="small-two">read more</a></p>
 	<div class="social">

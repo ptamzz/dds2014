@@ -11,6 +11,8 @@
 			</p>
 			<p class="meta-one">Event Date and Venue:</p>
 			<p>June 14, 2014, Industrial Design Centre, IIT Bombay, Powai, Mumbai</p>
+			<p><a href="docs/DDS2014.d.tour_brochure.pdf" target="_blank"><span class="glyphicon glyphicon-file"></span> Download d.Tour Brochure (3.4MB)</a></p>
+			<p>.</p>
 			<p class="meta-two" style="margin-top: 35px;">
 				<a class="reg-button" href="http://dtourdds.doattend.com/" target="_blank">Register for the workshop now*</a>
 			</p>
@@ -117,6 +119,30 @@
 			</p>
 		</div>
 		<div class="d-tour-pic"></div>
+	</div>
+
+	<div id="branding-design" class="each-tour">
+		<div class="d-tour-pic"></div>
+		<div class="d-tour-desc">
+			<h4 class="title">Branding and Logo Design</h4>
+			<Div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
+			<p></p>
+			<p>
+				Visual design plays a vital role in communicating the company’s products and its ideology 
+				effectively to the customers. A logo speaks a lot about the company; although silently.
+			</p>
+			<p>
+			 	The workshop aims to sensitize and give the future designers and entrepreneurs a peek 
+			 	into branding as a whole and logo design in particular.
+			</p>
+			<p>The workshop will cover</p>
+			<ul class="branding-list">
+				<li>- Detailed understanding</li>
+				<li>- Case Studies</li>
+				<li>- Hands-on experience</li>
+			</ul>
+
+		</div>
 	</div>
 </div>
 

@@ -117,6 +117,8 @@ h3 { font-size: 25px; line-height: 1.4em; }
 #bg video { position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;min-width: 50%; min-height: 50%; }
 #overlay { background: url(../img/pattern.png); position: fixed; background-repeat: repeat; top: 0; left: 0; min-width: 100%; min-height: 100%; z-index: 1; }
 
+.up { font-size: 12px; position: relative; top: -5px;  }
+
 .reg-button { padding: 10px 15px; background: #00A79D; color: #FFF !important; text-decoration: none !important; }
 .reg-button:hover { padding: 10px 15px; background: #2ECAC1; color: #FFF !important; }
 
@@ -277,9 +279,18 @@ h3 { font-size: 25px; line-height: 1.4em; }
         .schedule i { background: url("../img/icons/schedule.png") no-repeat; background-size: 23px; background-position: 50% 50%; }
         .sponsors i { background: url("../img/icons/sponsor.png") no-repeat; background-size: 25px; }
         .contact i { background: url("../img/icons/contact.png") no-repeat; background-size: 18px; background-position: 50% 50%; }
+        .registrations i { background: url("../img/icons/registration.png") no-repeat; background-size: 18px; background-position: 50% 50%; }
     .home .nav-title { font-size: 30px; font-weight: bold; }
         .nav-title { font-family: "fira_sans_otregular", sans-serif; font-size: 30px; }
 
+.logo-bunch { position: absolute; left: 25px; bottom: 50px; width: 210px; }
+    .logo-bunch a { display: block; }
+    .logo-bunch a:nth-child(1) { margin-left: 10px; padding: 3px 15px; }
+        .logo-bunch a:nth-child(1) img { width: 45px; }
+    .logo-bunch a:nth-child(2) { padding: 4px 15px; border-left: 2px solid rgba(0,0,0,.5); }
+        .logo-bunch a:nth-child(2) img { width: 80px; }
+
+#reg-hotlink { position: absolute; right: 180px; top: -50px; z-index: 1000; }
 
 .meta-one { font-family: "fira_sans_otmedium", sans-serif; }
 .meta-two { font-family: "fira_sans_otregular", sans-serif; }
@@ -299,6 +310,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 #mobility-design { background-color: #0D6194; color: #FFF; }
 #hardware-design { background-color: #F15925; color: #FFF; }
 #mobile-design { background-color: #8DB03F; color: #FFF; }
+#branding-design { background-color: #48576D; color: #FFF; }
 
 
     .d-tour-pane .content .each-tour:first-child { width: 600px; padding: 60px; }
@@ -326,11 +338,14 @@ h3 { font-size: 25px; line-height: 1.4em; }
                 #mobility-design .d-tour-pic { background: url(../img/mobility-worshop.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
                 #hardware-design .d-tour-pic { background: url(../img/hardware-workshop.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
                 #mobile-design .d-tour-pic { background: url(../img/mob-app-workshop.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+                #branding-design .d-tour-pic { background: url(../img/logos_branding.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }    
+    
             .d-tour-desc { padding: 25px 35px; }
     .each-tour:first-child .quote { color: #6B0A29; } 
     .each-tour .teaser { width: 450px; color: #404041; }
         .each-tour .teaser .meta-one { margin-top: 30px; }
-
+.branding-list { list-style: none; }
+    .branding-list li { margin: 5px; }
 
 /* ********** Sponsors ************ */
 .sponsors-pane .content .each-tour:first-child { width: 650px; margin-right: 100px; padding: 20px 35px }
@@ -386,18 +401,29 @@ h3 { font-size: 25px; line-height: 1.4em; }
 #schedule-pic { background: url(../img/sea-link.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 /* *******speakers *************** */
+.speakers-pane .each-tour { padding: 60px; }
 .speakers-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
-.speakers-pane .content h3.title, h3.title { font-family: 'fira_sans_otbold', sans-serif; font-size: 50px; color: #00A79D; padding: 0; }
-.speakers {  width: 1200px;}
+
+/* .speakers-pane .content h3.title, h3.title { font-family: 'fira_sans_otbold', sans-serif; font-size: 50px; color: #00A79D; padding: 0; }
+
+.speakers-pane .each-tour:nth-child(1) {  width: 1700px;}
 .speakers .speaker-list { margin-top:20px;}
 .speakers #about-speakers { float:left; width: 600px; margin-left: -60px; padding:60px;}
 .speaker .speakers-desc { float:left; margin-top: 10px;}
 .speaker .speakers-desc p {margin-bottom:0px;} 
 .speaker .speakers-desc .meta-one {margin-bottom:10px;}
 .speaker .speakers-desc span{padding-right: 5px;}
-.speakers .speaker {float:left; margin-right: 35px; margin-top:30px; color: #404041; padding:0;}
-.speaker .speakers-pic { background: url(../img/Speaker1.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
-#indian-speakers {margin-left:174px;}
+.speakers .speaker { float:left; margin-right: 35px; color: #404041; padding: 0; }
+#speaker3 { margin-right: 80px; }
+#speaker1 .speakers-pic { background: url(../img/speakers/mike_knowles.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
+#speaker2 .speakers-pic { background: url(../img/speakers/david_carson.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
+#speaker3 .speakers-pic { background: url(../img/speakers/meagan_carnahan.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
+#speaker4 .speakers-pic { background: url(../img/speakers/elizabeth_jacob.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
+#speaker5 .speakers-pic { background: url(../img/speakers/amardeep_behl.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
+#speaker6 .speakers-pic { background: url(../img/speakers/divya_dutta.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
+#speaker7 .speakers-pic { background: url(../img/speakers/speaker1.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
+
+#indian-speakers { margin-left: 426px; }
 .speakers-pane .content .speaker-tour:first-child {width:1200px; padding:60px;}
 .speaker-tour { float:left; min-width:600px; height:100%;}
 td {vertical-align:top;}
@@ -420,6 +446,164 @@ td {vertical-align:top;}
 #speaker-col6 .speaker-desc {padding-top: 20px;}
 
 .speaker-profile {padding-left:20px;}
+
+.speaker-cover{ 
+    position: absolute; top: 0; left: 0;
+    height: 250px; width: 800px; 
+}
+    .mike_knowles { background: url(../img/speakers/bench_margosa_mike_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    .david_carson { background: url(../img/speakers/david_carson_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    .meagan_carnahan { background: url(../img/speakers/meagan_carnahan_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    .elizabeth_jacob { background: url(../img/speakers/elizabeth_jacob_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    .amardeep_behl { background: url(../img/speakers/amardeep_behl_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    .divya_dutta { background: url(../img/speakers/divya_dutta_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    .mike_knowles { background: url(../img/speakers/bench_margosa.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.speaker-teaser { margin-top: 190px; width: 450px; color: #404041; }
+    .speaker-teaser .meta-one { margin-top: 30px; }
+*/
+
+
+/* ***** Registrations ****** */
+.registrations-pane .each-tour { padding: 30px 60px; }
+
+.registrations-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+.days, .separate { text-align: center; }
+    #reg-tickets { width: 602px; }
+        #reg-tickets .header { color: #FFF; border-right: 2px solid #80C341;}
+        #reg-tickets .header:after,
+        #reg-tickets .ticket-type:after,
+        #reg-tickets .separate:after
+            { display: block; content: ' '; clear: both; }
+
+        #reg-tickets .header .meta-one, #reg-tickets .header .small-meta { margin: 0; }
+
+        #reg-tickets .header .days { width: 150px; text-align: center; }
+        #reg-tickets .header .days:nth-child(2),
+        #reg-tickets .header .days:nth-child(3),
+        #reg-tickets .header .days:nth-child(4) 
+            { width: 150px; padding: 10px 0; }
+
+            #reg-tickets .header .days:nth-child(2) { background-color: #97CE5D; }
+            #reg-tickets .header .days:nth-child(3),
+            #reg-tickets .header .days:nth-child(4) 
+                { background-color: #80C341; }
+
+
+        #reg-tickets .ticket-type:not(:first-child) { margin-top: 3px;  background-color: #2B3747; color: #FFF; }
+        #reg-tickets .ticket-type .price:first-child { width: 150px; padding: 10px 15px; }
+        #reg-tickets .ticket-type .price:nth-child(2) { width: 452px; border-left: 2px solid #48576D; } 
+            #reg-tickets .ticket-type .price:nth-child(2) .separate .each-price { width: 150px; padding: 10px 0; }
+                #reg-tickets .ticket-type .price:nth-child(2) .separate:first-child .each-price:nth-child(2),
+                #reg-tickets .ticket-type .price:nth-child(2) .separate:first-child .each-price:nth-child(3)
+                    { border-left: 2px solid #48576D; }
+
+
+            #reg-tickets .ticket-type .price:nth-child(2) .separate:nth-child(2) .each-price:nth-child(2) { width: 300px; background-color: #48576D; border-bottom: 2px solid #2B3747; }
+            #reg-tickets .ticket-type .price:nth-child(2) .separate:nth-child(3) .each-price { width: 450px; background-color: #48576D; }
+
+.d-tour-reg { list-style: none; }
+    .d-tour-reg li { margin: 15px 0; }
+
+#registrations-pic { background: url(../img/registrations-pic.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+
+/* **** Independent ****** */
+.independent { position: absolute; top: 0; right: -700px; min-height: 300px; width: 800px; background-color: #FFF; z-index: 100; }
+    .independent .each-tour { padding: 60px; }
+
+
+
+/* ***** Spseakers ***** */
+/*  .item */
+.item { position: absolute; border: 1px solid rgba(255,255,255, .9); overflow: hidden; }
+
+    .item:nth-child(1) { left: 0; top: 130px; }
+    .item:nth-child(2) { left: 400px; top: 130px; }
+    .item:nth-child(3) { left: 400px; top: 330px; }
+    .item:nth-child(4) { left: 600px; top: 330px; }
+    .item:nth-child(5) { left: 800px; top: 130px; }
+    .item:nth-child(6) { left: 1200px; top: 330px; }
+    .item:nth-child(7) { left: 1200px; top: 130px; }
+    .item:nth-child(8) { left: 1400px; top: 130px; }
+    .item:nth-child(9) { left: 1400px; top: 330px; }
+    .item:nth-child(10) { left: 1600px; top: 330px; }
+    .item:nth-child(11) { left: 1800px; top: 130px; }
+
+    .item:hover { cursor: pointer; }
+    .item img {
+        -moz-transform: translate3d(0, 0, 0);   /* Forcing GPU Acceleration trigger (for smooth animation transition in firefox) */
+
+        -webkit-transition: all 5s ease-in-out;
+           -moz-transition: all 5s ease-in-out;
+             -o-transition: all 5s ease-in-out;
+                transition: all 5s ease-in-out;
+    }
+
+    .item:hover img {
+        -webkit-animation: pan 15s ease-in-out infinite alternate;
+           -moz-animation: pan 15s ease-in-out infinite alternate;
+             -o-animation: pan 15s ease-in-out infinite alternate;
+                animation: pan 15s ease-in-out infinite alternate;
+    }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes pan {
+            0    { -webkit-transform: scale(0); }
+            10%  { -webkit-transform: scale(1.05) translate(0,0); }
+            60%  { -webkit-transform: scale(1.05) translate(5px,2px); }
+            100% { -webkit-transform: scale(1.05) translate(0,0); }
+        }
+
+        /* Mozila */
+        @-moz-keyframes pan {
+            0    { -moz-transform: translateZ(0) scale(0); }
+            10%  { -moz-transform: translateZ(0) scale(1.05) translate(0,0); }
+            60%  { -moz-transform: translateZ(0) scale(1.05) translate(5px,2px); }
+            100% { -moz-transform: translateZ(0) scale(1.05) translate(0,0); }
+        }
+
+        /* Opera */
+        @-o-keyframes pan {
+            0    { -o-transform: scale(0); }
+            10%  { -o-transform: scale(1.05) translate(0,0); }
+            60%  { -o-transform: scale(1.05) translate(5px,2px); }
+            100% { -o-transform: scale(1.05) translate(0,0); }
+        }
+
+        /* Mozila */
+        @keyframes pan {
+            0    { transform: scale(0); }
+            10%  { transform: scale(1.05) translate(0,0); }
+            60%  { transform: scale(1.05) translate(5px,2px); }
+            100% { transform: scale(1.05) translate(0,0); }
+        }
+
+/* For Image dimension 600px X 600px */
+.item600x600 { width: 400px; height: 400px; }
+    .item600x600 img { width: 400px; height: 398px; }
+
+/* For Image dimension 600px X 300px */
+.item600x300 { width: 400px; height: 200px; }
+    .item600x300 img { width: 400px; height: 198px; }
+
+/* For Image dimension 300px X 300px (or any square size image) */
+.item300x300 { width: 200px; height: 200px; }
+    .item300x300 img { width: 200px; height: 198px; }
+
+    .item600x600:before, .item600x600:after { width: 400px; height: 400px; }
+    .item600x300:before, .item600x300:after  { width: 400px; height: 200px; }
+    .item300x300:before, .item300x300:after { width: 200px; height: 200px; }
+
+    .item600x600:after { top: 0; left: 0; }
+    .item600x300:after  { top: 0; left: 0; }
+    .item300x300:after { top: 0; left: 0; }
+
+    .item:before{ content: ''; display: block; position: absolute; background-image: url("../img/pattern_lighter.png"); }
+        .item:hover:before{ background-image: none; }
+
+.meta { position: relative; top: -90px; left: 0; width: 100%; color: rgba(255,255,255,.9); padding: 5px 15px; z-index: 100; }
+.desc { margin-bottom: 30px; font-size: 14px; font-weight: 100; }
 
     
     

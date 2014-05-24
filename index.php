@@ -26,6 +26,7 @@
 	<script src="js/jquery.mousewheel.js"></script>	<!-- Mapping vertical mouse/trackpad scrolling to horizontal scrolling -->
 	
 
+	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/jquery-ui-blind.min.js"></script>
 	<script src="js/pace.min.js"></script>
 	
@@ -45,12 +46,12 @@
 					<span class="nav-title">DDS 2014</span>
 				</a>
 			</li>
-			<!-- <li class="speakers">
+			<li class="speakers">
 				<a href="#/speakers">
 					<i class="icon"></i>
 					<span class="nav-title">Speakers</span>
 				</a>
-			</li> -->
+			</li>
 			<li class="d-tour">
 				<a href="#/d-tour">
 					<i class="icon"></i>
@@ -69,10 +70,17 @@
 					<span class="nav-title">Alumni Rendezvous</span>
 				</a>
 			</li>
-			<li class="schedule">
+			<!-- <li class="schedule">
 				<a href="#/schedule">
 					<i class="icon"></i>
 					<span class="nav-title">Schedule</span>
+				</a>
+			</li> -->
+
+			<li class="registrations">
+				<a href="#/registrations">
+					<i class="icon"></i>
+					<span class="nav-title">Registrations</span>
 				</a>
 			</li>
 			
@@ -92,7 +100,12 @@
 				</li>
 			-->
 		</ul>
+		<div class="logo-bunch">
+			<a class="left" href="http://iitb.ac.in" target="_blank"><img src="img/IIT_Bombay_Logo.svg.png" alt="IIT Bombay Logo"></a>
+			<a class="left" href="http://www.idc.iitb.ac.in" target="_blank"><img src="img/IDC_Logo.png" alt="Industrial Design Centre"></a>
+		</div>
 	</nav>
+	<a id="reg-hotlink" class="reg-button" href="#/registrations">Book DDS 2014 Tickets Now</a>
 
 	<div class="home-pane st-container st-effect-11">
 		<!-- content push wrapper -->
@@ -122,7 +135,6 @@
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
 
-
 	<!-- d.tour -->
 	<div class="d-tour-pane st-container st-effect-11">
 		<!-- content push wrapper -->
@@ -150,7 +162,6 @@
 			</div><!-- /st-content -->
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
-
 
 	<div class="sponsors-pane st-container st-effect-11">
 		<!-- content push wrapper -->
@@ -191,7 +202,7 @@
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
 
-	<div class="about-pane st-container st-effect-11">
+	<div class="registrations-pane st-container st-effect-11">
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 			<div class="st-content"><!-- this is the wrapper for the content -->
@@ -205,7 +216,38 @@
 	</div><!-- /st-container -->
 
 
-	<div id="overlay"></div>
+	<div class="about-pane st-container st-effect-11">
+		<!-- content push wrapper -->
+		<div class="st-pusher">
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<div class="main clearfix">
+						<div class="content"><!-- content will come here --></div>
+					</div><!-- /main -->
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+
+<!-- 
+<div class="independent displaced">
+	<div class="isotope js-isotope" >
+		<div class="each-tour">
+			<div class="speaker-cover"></div>
+			<div class="speaker-teaser left">
+				<p class="meta-one">Mike Knowles</p>
+				<p class="quote">Learning is more effective when it is an active rather than a passive process.</p>
+				<p>
+					In an attempt to give students a hands-on experience of the design process, through which they can 
+					solve real world problems by using technical skills, students of IDC would be conducting the d.Tour 
+					workshop prior to the actual event.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+ -->	<div id="overlay"></div>
 	<div id="bg">
 		<video id="bg-video" muted autoplay loop>
 			<source src="video/video2.webm" type='video/webm'>
