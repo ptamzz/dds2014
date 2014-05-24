@@ -127,9 +127,9 @@
 	<div class="each-tour">
 		<h4 class="title" style="opacity: 0;">.</h4>
 		<div class="schedule-desc">
-			<h4 class="title" style="margin-top: 40px;">TEQUIP Registration</h4>
+			<h4 class="title" style="margin-top: 40px;">TEQIP Registration</h4>
 			<p>
-				For participants attending the DDS 2014 Conference, under the MHRD-TEQUIP-KIT Initiative. 
+				For participants attending the DDS 2014 Conference, under the MHRD-TEQIP-KIT Initiative. 
 				This is an invite only registration and not open to all. Please write to <a href="contact@ddsidc.com">contact@ddsidc.com</a> in case of queries.
 			</p>
 

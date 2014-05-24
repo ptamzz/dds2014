@@ -58,24 +58,12 @@
 					<span class="nav-title">d.tour</span>
 				</a>
 			</li>
-			<!-- <li class="sponsors">
-				<a href="#/sponsors">
-					<i class="icon"></i>
-					<span class="nav-title">Sponsors</span>
-				</a>
-			</li> -->
 			<li class="alumni">
 				<a href="#/alumni">
 					<i class="icon"></i>
 					<span class="nav-title">Alumni Rendezvous</span>
 				</a>
 			</li>
-			<!-- <li class="schedule">
-				<a href="#/schedule">
-					<i class="icon"></i>
-					<span class="nav-title">Schedule</span>
-				</a>
-			</li> -->
 
 			<li class="registrations">
 				<a href="#/registrations">
@@ -91,14 +79,7 @@
 				</a>
 			</li>
 
-			<!-- 
-				<li class="contact">
-					<a href="#/contact">
-						<i class="icon"></i>
-						<span class="nav-title">Contact</span>
-					</a>
-				</li>
-			-->
+			
 		</ul>
 		<div class="logo-bunch">
 			<a class="left" href="http://iitb.ac.in" target="_blank"><img src="img/IIT_Bombay_Logo.svg.png" alt="IIT Bombay Logo"></a>
@@ -229,25 +210,8 @@
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
 
-<!-- 
-<div class="independent displaced">
-	<div class="isotope js-isotope" >
-		<div class="each-tour">
-			<div class="speaker-cover"></div>
-			<div class="speaker-teaser left">
-				<p class="meta-one">Mike Knowles</p>
-				<p class="quote">Learning is more effective when it is an active rather than a passive process.</p>
-				<p>
-					In an attempt to give students a hands-on experience of the design process, through which they can 
-					solve real world problems by using technical skills, students of IDC would be conducting the d.Tour 
-					workshop prior to the actual event.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
 
- -->	<div id="overlay"></div>
+	<div id="overlay"></div>
 	<div id="bg">
 		<video id="bg-video" muted autoplay loop>
 			<source src="video/video2.webm" type='video/webm'>

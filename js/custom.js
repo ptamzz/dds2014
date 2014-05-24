@@ -221,6 +221,10 @@ function doMagicTransition(e, page){
 }
 
 function loadPage(p){
+
+	//If registration page, hide registration btn
+	if(p == "registrations"){ $("#reg-hotlink").css({ 'top' : -50 }); }
+
 	$.ajax({
 		type: "POST",
 		url: "php/loadPage.php",
