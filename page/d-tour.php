@@ -3,18 +3,21 @@
 
 		<div class="reverse-quote reverse-quote-yellow">d.tour</div>
 		<div class="teaser left">
-			<p class="quote">Learning is more effective when it is an active rather than a passive process.</p>
+			<!-- <p class="quote">Learning is more effective when it is an active rather than a passive process.</p> -->
 			<p>
 				In an attempt to give students a hands-on experience of the design process, through which they can 
 				solve real world problems by using technical skills, students of IDC would be conducting the d.Tour 
-				workshop prior to the actual event.
+				sessions prior to the actual event.
 			</p>
-			<p class="meta-one">Event Date and Venue:</p>
-			<p>June 14, 2014, Industrial Design Centre, IIT Bombay, Powai, Mumbai</p>
+			<p class="meta-one">Details:</p>
+			<p><span class="glyphicon glyphicon-hand-right"></span> June 14, 2014 </p>
+			<p><span class="glyphicon glyphicon-map-marker"></span> Industrial Design Centre, IIT Bombay</p>
+			<p><span class="glyphicon glyphicon-phone"></span> +91 961 964 1743 (Sajal Nagwanshi)</p>
+
 			<p><a href="docs/DDS2014.d.tour_brochure.pdf" target="_blank"><span class="glyphicon glyphicon-file"></span> Download d.Tour Brochure (3.4MB)</a></p>
-			<p>.</p>
+			
 			<p class="meta-two" style="margin-top: 35px;">
-				<a class="reg-button" href="http://dtourdds.doattend.com/" target="_blank">Register for the workshop now*</a>
+				<a class="reg-button" href="http://dtourdds.doattend.com/" target="_blank">Register for d.Tour now*</a>
 			</p>
 			<br/>
 			<p class="small-meta">The event registration costs ₹ 200 which will be refunded to the participants along with their participation certificates.</p>
@@ -55,7 +58,7 @@
 	<div id="calligraphy-design" class="each-tour">
 		<div class="d-tour-pic"></div>
 		<div class="d-tour-desc">
-			<h4 class="title">Calligraphy Design</h4>
+			<h4 class="title">Calligraphy & Typography</h4>
 			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
 			<p></p>
 			<p>

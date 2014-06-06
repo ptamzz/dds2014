@@ -2,9 +2,44 @@
 
 	$sp = urldecode($_POST['speaker']);
 	//if($page == "") { $page = "home"; }
-
-	if($sp == "mike_knowles") {
 ?>
+
+
+<?php if ($sp == "mahendra-patel") { ?>
+	<div class="speaker-cover mahendra-patel"></div>
+	<div class="speaker-teaser left">
+		<p class="meta-one">Mahendra Patel</p>
+		<p>Mahendra Patel is a retired Principal Designer from the National Institute of Design, NID, Ahmedabad.</p>
+
+		<p>After his B.A. at Faculty of Fine Arts, M. S. University, Baroda, and P.G. at NID, he did 1 Year Advance Graphic Design 
+		Course at School of Design, Basel, Switzerland in 1968. And later in 1971, he did apprenticeship of one year on type design 
+		at Atelier Frutiger in Paris.</p>
+
+		<p>His works at NID have concentrated on type design development projects of Indian scripts. He has also worked extensively on 
+		map design projects including Tourist and Bus-route Maps of Ahmedabad; Guide Maps of Gujarat and Goa District; Irrigation and 
+		Ecology Maps of Gujarat; Industrial and Archeological Maps of India.</p> 
+		
+		<p>In 2000, he has designed Signage Design System for Tirupati Temple City. And in 2002 He has designed the Signage Design System 
+		for Hyderabad City.</p> 
+
+		<p>He has worked for 39 years at NID since 1964. He has conducted workshops and courses at Faculty of Fine Arts, Baroda; Srishti 
+		College of Arts and Design, Bangalore; Mudra Institute of Communications, Ahmedabad; Industrial Design Centre, IIT, Mumbai; 
+		Indian Institute of Crafts, Jaipur; IIT, Gauhati; DJ Academy of Design, Coimbatur: Symbiosis Institute of Design, Pune and 
+		MIT Institute of Design, also at Pune.</p>
+
+		<p>He has also taught at Rhode Island School of Design, USA; Nova Scotia College of Arts, Canada; Christchurch College of Arts, 
+		New Zealand and Indus Valley School of Arts and Architecture, Pakistan.</p>
+
+		<p>Presently, he is a Senior Adjunct Faculty at Symbiosis Institute of Design from 2007 and at MIT Institute of Design from 2009, 
+		both at Pune.</p>
+
+		<p>In 2010 He received the most prestigious Gutenberg International Award for his contribution in Type Design Development of Indian 
+		Scripts. And in 2013 his Font Design “Neue Frutiger Devanagari” in 5 weights has been launched by MonoType.</p>
+
+
+	</div>
+<?php } else if ($sp == "meagan_carnahan") { ?>
+
 
 <div class="speaker-cover mike_knowles"></div>
 <div class="speaker-teaser left">

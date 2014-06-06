@@ -41,7 +41,7 @@ $(function() {
 
 	//Press escape to hover-out
 	$(document).keyup(function(e) {
-		if (e.keyCode == 27) { hoverOut(); }   // esc
+		if (e.keyCode == 27) { hoverOut(); hideDesc(); }   // esc
 	});
 
 	//Hash URL Handling
@@ -80,14 +80,34 @@ $(function() {
 	//Load Speaker Profile 
 	$(".speakers-pane").on("click", ".speaker", function(){
 		console.log(".speaker clicked");
-		
-		getOverlay();
+		$("#flyin").html("<div class='spinner'><div class='dot1'></div><div class='dot2'></div></div>");
 
-		$(".independent").show();
-		$(".independent").animate({
-			'right' : '0'
-		}, 100, "swing");
+		console.log($(this).data('speaker'));
+
+		//Get speaker desc
+		$.ajax({
+			type: "POST",
+			url: "php/speaker-details.php",
+			data: { "speaker" : encodeURIComponent($(this).data('speaker')) },
+			cache: false,
+			error: function(xhr){
+				if(xhr.status == 403){
+					$('#flyin').html("<p class='quote'>And error occured. If the error persist, kindly contact contact@ddsidc.com</a>");
+				}
+			},
+			success: function(html){
+				$("#flyin").css({ 'height' : winHeight });
+				$("#flyin").html(html);	
+			}
+		});
+
+		showDesc();
 	});
+
+	//Hide Speaker desc
+	$("body").on("click", "#flyout", function(){ hideDesc(); });
+	$("body").on("click", "#overlay", function(){ hideDesc(); });
+	
 
 
 }); // jQuery $(funtion() ends
@@ -99,12 +119,36 @@ $(function() {
 	});
 */
 
-function getOverlay(){
-	$("#overlay").css({ 'z-index' : 10 });
+function getOverlay(){ $("#overlay").css({ 'z-index' : 10 }); }
+function removeOverlay(){ $("#overlay").css({ 'z-index' : 1 }); }
+
+// Function to SHOW description panel from right
+function showDesc(){
+	getOverlay();
+
+	$(".independent").show();
+	$(".independent").animate({
+		'right' : '0'
+	}, 100, "swing");
+
+	$("#flyout").animate({
+		'right' : '940'
+	}, 130, "swing");
 }
 
-function removeOverlay(){
-	$("#overlay").css({ 'z-index' : 1 });
+// Function to HIDE description panel from right
+function hideDesc(){
+
+	$("#flyout").animate({
+		'right' : '-1000'
+	}, 80, "swing");
+
+	$(".independent").animate({
+			'right' : '-1000'
+	}, 100, "swing", function(){
+		$(".independent").hide();
+		removeOverlay();
+	});
 }
 
 function handleURL(p){
@@ -142,12 +186,7 @@ function setPixels(p){
 //Effect for Nav MouseIn
 function hoverIn(){
 	//Hide independent 
-	$(".independent").animate({
-			'right' : '-700'
-	}, 100, "swing", function(){
-		$(".independent").hide();
-		removeOverlay();
-	});
+	hideDesc();
 
 
 	$(".content").animate({scrollLeft:0}, '500', 'swing', function(){ /* do nothing */ });
