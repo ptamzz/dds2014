@@ -21,6 +21,7 @@ $(function() {
 	dom = $('body, html');
 	winHeight = $(window).height();
 	winWidth = $(window).width();
+
 	setPixels(false);	//Set default width
 
 	//Mapping horizontal to vertical scroll

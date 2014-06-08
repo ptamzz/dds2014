@@ -23,11 +23,11 @@
 
 		</div>
 	</div>
-	<div class="each-tour" style="width: 2400px;">
-		<div class="item item600x600 speaker" data-speaker="ag-rao">
-			<img src="img/speakers/agrao400X400.jpg" alt="">
+	<div class="each-tour" style="width: 2600px;">
+		<div class="item item600x600 speaker" data-speaker="mike-knowles">
+			<img src="img/speakers/mike_knowles400X400.jpg" alt="">
 			<div class="meta">
-				<h4 class="title">A G Rao</h4>
+				<h4 class="title">Mike Knowles</h4>
 			</div>
 		</div>
 
@@ -59,6 +59,8 @@
 			</div>
 		</div>
 
+		<!-- Conference Day 1 -->
+
 		<div class="item item300x300 speaker" data-speaker="sudhir-sharma">
 			<img src="img/speakers/sudhir_sharma400X400.jpg" alt="">
 			<div class="meta">
@@ -81,18 +83,6 @@
 			</div>
 		</div>
 
-		<div class="item item300x300 speaker" data-speaker="divya-datta">
-			<img src="img/speakers/divya_datta400X400.jpg" alt="">
-			<div class="meta">
-				<h4 class="title">Divya Datta</h4>
-			</div>
-		</div>
-		<div class="item item300x300 speaker" data-speaker="mike-knowles">
-			<img src="img/speakers/mike_knowles400X400.jpg" alt="">
-			<div class="meta">
-				<h4 class="title">Mike Knowles</h4>
-			</div>
-		</div>
 		<div class="item item600x600 speaker" data-speaker="amardeep-behl">
 			<img src="img/speakers/amardeep_behl400X400.jpg" alt="">
 			<div class="meta">
@@ -100,21 +90,35 @@
 			</div>
 		</div>
 
-		<p class="small-meta" style="position: absolute; top: 550px; left: 0;" >Schedule/Programme is subject to change without prior notice</p>
-		<!-- <div class="item item300x300">
-			<img src="img/speakers/manoj_neel400X400.jpg" alt="">
+		<div class="item item300x300 speaker" data-speaker="divya-datta">
+			<img src="img/speakers/divya_datta400X400.jpg" alt="">
 			<div class="meta">
-				<h4 class="title">Manoj Neel</h4>
-				<div class="desc">Design Consultant</div>
+				<h4 class="title">Divya Datta</h4>
 			</div>
 		</div>
-		<div class="item item600x300">
-			<img src="img/speakers/mike_knowles800X400.jpg" alt="">
-			<div class="meta">
-				<h4 class="title">Mike Knowles</h4>
-				<div class="desc">Interior Designer</div>
-			</div>
-		</div> -->
 		
+		<div class="item item300x300 speaker" data-speaker="ag-rao">
+			<img src="img/speakers/agrao400X400.jpg" alt="">
+			<div class="meta">
+				<h4 class="title">A G Rao</h4>
+			</div>
+		</div>
+
+		<div class="item item600x300 speaker" data-speaker="kirti-trivedi">
+			<img src="img/speakers/kirti_trivedi400X200.jpg" alt="">
+			<div class="meta">
+				<h4 class="title" style="color: #333;">Kirti Trivedi</h4>
+			</div>
+		</div>
+
+		<div class="item item600x600 speaker" data-speaker="manoj-neel">
+			<img src="img/speakers/manoj_neel400X400.jpg" alt="">
+			<div class="meta">
+				<h4 class="title" style="color: #333;">Manoj Neel</h4>
+			</div>
+		</div>
+
+
+		<p class="small-meta" style="position: absolute; top: 550px; left: 0;" >Schedule/Programme is subject to change without prior notice</p>
 	</div>
 </div>

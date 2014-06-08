@@ -304,4 +304,33 @@
 		films, THE LAST VICEROY (2006-7), THE PARTITION (2005), SHADOWS OF TIME (2002-2003), SAMSARA (2000-2001), and 
 		DANCE OF THE WIND (1995-1996).</p>
 	</div>
+<?php } else if ($sp == "kirti-trivedi") { ?>
+	<div class="speaker-cover kirti-trivedi"></div>
+	<h4 class="speaker-title">Kirti Trivedi</h4>
+	<div class="speaker-teaser left">
+		<p>Kirti Trivedi is a Professor at the Industrial Design Centre (IDC), IIT Bombay. After a first degree in Mechanical 
+		Engineering, he did postgraduate studies in Industrial Design from IIT Bombay and the Royal College of Art, London. 
+		In 1981, he worked as a UNESCO Fellow in Japan, under the guidance of Prof Kohei Sugiura and was introduced by him 
+		to the intellectual depth and the richness of Asian Design. He helped set up the Centre for Asian Art & Design at 
+		the School of Art, Design and Media at NTU in Singapore, when working as a visiting professor there in 2011.</p>
+
+		<p>Besides teaching and design research, he has been active as a design consultant in the areas of product design, design 
+		management and product planning, graphic design, book design, exhibition and museum design, environmental graphics and 
+		signage design; with numerous publications and awards both nationally and internationally.</p>
+
+	</div>
+	<div class="speaker-teaser left">
+		<p>He designed the permanent 
+		exhibition My Life is My Message at Sabarmati Ashram, Ahmedabad as well as Vinoba Darshan at Gopuri, Wardha. His current 
+		research is in Asian Design, Universal, Language-independent Learning, Self-evident Design, and in developing appropriate 
+		interaction design solutions for Indian needs based on emerging technology possibilities. In 2000, he was one of the six 
+		international educationists who drafted the Manifesto for the Future of Design Education for ICOGRADA, and presented at 
+		Oullim 2000, in Seoul, South Korea.</p>
+	</div>
+<?php } else if ($sp == "manoj-neel") { ?>
+	<div class="speaker-cover manoj-neel"></div>
+	<h4 class="speaker-title">Manoj Neel</h4>
+	<div class="speaker-teaser left">
+		<p>Biography will be up soon.</p>
+	</div>
 <?php } ?>

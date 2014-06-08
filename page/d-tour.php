@@ -3,7 +3,6 @@
 
 		<div class="reverse-quote reverse-quote-yellow">d.tour</div>
 		<div class="teaser left">
-			<!-- <p class="quote">Learning is more effective when it is an active rather than a passive process.</p> -->
 			<p>
 				In an attempt to give students a hands-on experience of the design process, through which they can 
 				solve real world problems by using technical skills, students of IDC would be conducting the d.Tour 
@@ -94,20 +93,10 @@
 	<div id="hardware-design" class="each-tour">
 		<div class="d-tour-pic"></div>
 		<div class="d-tour-desc">
-			<h4 class="title">Hardware Innovation</h4>
+			<h4 class="title">Hardware Innovation (Cancelled)</h4>
 			<div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
 			<p></p>
-			<p>
-				The workshop's objective is to use the design process to come up with innovation ideas using a hardware prototyping platform. 
-				It's intended for engineers and DIY hobbyists who want to create interactive objects or environments.
-			</p>
-			<p>
-				The workshop would start with a brief discussion about the trends in contemporary technology and try to predict future trends.
-				This will be followed by an introduction to micro-controllers, with an overview of Open Hardware and community driven projects.
-			</p>
-			<p>
-				We shall be using Arduino platform to make prototypes.
-			</p>
+			<p class="quote">This d.Tour Session has been cancelled.</p>
 		</div>
 	</div>
 
@@ -122,30 +111,6 @@
 			</p>
 		</div>
 		<div class="d-tour-pic"></div>
-	</div>
-
-	<div id="branding-design" class="each-tour">
-		<div class="d-tour-pic"></div>
-		<div class="d-tour-desc">
-			<h4 class="title">Branding and Logo Design</h4>
-			<Div class="meta-one"><span class="glyphicon glyphicon-time"></span> 10:00AM to 6:00PM</div>
-			<p></p>
-			<p>
-				Visual design plays a vital role in communicating the company’s products and its ideology 
-				effectively to the customers. A logo speaks a lot about the company; although silently.
-			</p>
-			<p>
-			 	The workshop aims to sensitize and give the future designers and entrepreneurs a peek 
-			 	into branding as a whole and logo design in particular.
-			</p>
-			<p>The workshop will cover</p>
-			<ul class="branding-list">
-				<li>- Detailed understanding</li>
-				<li>- Case Studies</li>
-				<li>- Hands-on experience</li>
-			</ul>
-
-		</div>
 	</div>
 </div>
 

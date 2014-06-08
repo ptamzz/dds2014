@@ -10,16 +10,16 @@
 				<div class="header">
 					<div class="days left">.</div>
 					<div class="days left">
-						<p class="meta-one">Day 1 - 27th June</p>
-						<p class="small-meta">Workshops</p>
+						<p class="meta-one">Workshops</p>
+						<p class="small-meta">Day 1 - 27th June</p>
 					</div>
 					<div class="days left">
-						<p class="meta-one">Day 2 - 28th June</p>
-						<p class="small-meta">Conference Day 1</p>
+						<p class="meta-one">Conference Day 1</p>
+						<p class="small-meta">Day 2 - 28th June</p>
 					</div>
 					<div class="days left">
-						<p class="meta-one">Day 3 - 29th June</p>
-						<p class="small-meta">Conference Day 2</p>
+						<p class="meta-one">Conference Day 2</p>
+						<p class="small-meta">Day 3 - 29th June</p>
 					</div>
 				</div>
 
@@ -117,7 +117,7 @@
 			</p>
 
 			<div class="meta-two" style="margin-top: 35px;">
-				<a class="reg-button" href="http://bit.ly/ddskit2014" target="_blank">Register now</a>
+				<a class="reg-button" href="http://bit.ly/ddskit2014" target="_blank">TEQIP Registration</a>
 			</div>
 		</div>
 	</div>

@@ -54,12 +54,12 @@
 				</a>
 			</li>
 
-			<!-- <li class="schedule">
+			<li class="schedule">
 				<a href="#/schedule">
 					<i class="icon"></i>
-					<span class="nav-title">Events Schedule</span>
+					<span class="nav-title">Schedule</span>
 				</a>
-			</li> -->
+			</li>
 
 			<li class="speakers">
 				<a href="#/speakers">
@@ -67,6 +67,13 @@
 					<span class="nav-title">Speakers</span>
 				</a>
 			</li>
+			<li class="workshops">
+				<a href="#/workshops">
+					<i class="icon"></i>
+					<span class="nav-title">Workshops</span>
+				</a>
+			</li>
+
 			<li class="alumni">
 				<a href="#/alumni">
 					<i class="icon"></i>

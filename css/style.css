@@ -271,7 +271,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
         .home i { background: url("../img/dds_main_icon.png") no-repeat; background-size: 25px; }
         .speakers i { background: url("../img/icons/speakers.png") no-repeat; background-size: auto 25px; background-position: 50% 50%;}
-        /*.workshops i { background: url("../img/edit.png") no-repeat; background-size: 25px; }*/
+        .workshops i { background: url("../img/icons/workshop.png") no-repeat; background-size: 22px; }
         .d-tour i { background: url("../img/icons/dtour.png") no-repeat; background-size: 25px; }
         .projects i { background: url("../img/icons/projects.png") no-repeat; background-size: 25px; }
         .about i { background: url("../img/icons/about.png") no-repeat; background-size: 25px; }
@@ -382,86 +382,11 @@ h3 { font-size: 25px; line-height: 1.4em; }
     .event-details { margin:  30px 0; }
     .event-details p { margin: 0; }
 
-/* ********** Schedule ******* */
-.schedule-pane .content .isotope { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
-#schedule-info { padding: 60px;}
-    .schedule-pane .schedule-desc { margin-left: 25px; padding: 115px 35px 0 35px; }
-    .schedule-pane .each-tour:nth-child(1) .reverse-quote { margin: 60px 0 0 60px; }
-    .schedule-pane .each-tour:nth-child(1) .schedule-desc { padding-top: 25px; margin-left: 25px; }
-        .schedule-pane .each-tour:nth-child(2), .schedule-pane .each-tour:nth-child(3) { background-color: #EB3D68; color: #FFF; }
-        .schedule-pane .each-tour:nth-child(4), .schedule-pane .each-tour:nth-child(5) { background-color: #4ECDC4; color: #FFF; }
 
-    .event-date { font-size: 18px; margin-top: 5px; }
-
-    .schedule-list { margin-top: 25px; }
-    .schedule-pane .schedule-desc .meta-two { margin-bottom: 15px; }
-        .schedule-pane .schedule-desc .meta-two:after { content: ' '; display: block; clear: both; }
-        .schedule-pane .schedule-desc .meta-two .time { padding-top: 3px; width: 100px; font-size: 14px; text-align: right; }
-        .schedule-pane .schedule-desc .meta-two .event { padding-left: 10px; width: 300px; line-height: 1.4em; }
-#schedule-pic { background: url(../img/sea-link.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 /* *******speakers *************** */
 .speakers-pane .each-tour { padding: 60px; }
 .speakers-pane .content { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
-
-/* .speakers-pane .content h3.title, h3.title { font-family: 'fira_sans_otbold', sans-serif; font-size: 50px; color: #00A79D; padding: 0; }
-
-.speakers-pane .each-tour:nth-child(1) {  width: 1700px;}
-.speakers .speaker-list { margin-top:20px;}
-.speakers #about-speakers { float:left; width: 600px; margin-left: -60px; padding:60px;}
-.speaker .speakers-desc { float:left; margin-top: 10px;}
-.speaker .speakers-desc p {margin-bottom:0px;} 
-.speaker .speakers-desc .meta-one {margin-bottom:10px;}
-.speaker .speakers-desc span{padding-right: 5px;}
-.speakers .speaker { float:left; margin-right: 35px; color: #404041; padding: 0; }
-#speaker3 { margin-right: 80px; }
-#speaker1 .speakers-pic { background: url(../img/speakers/mike_knowles.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
-#speaker2 .speakers-pic { background: url(../img/speakers/david_carson.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
-#speaker3 .speakers-pic { background: url(../img/speakers/meagan_carnahan.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
-#speaker4 .speakers-pic { background: url(../img/speakers/elizabeth_jacob.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
-#speaker5 .speakers-pic { background: url(../img/speakers/amardeep_behl.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
-#speaker6 .speakers-pic { background: url(../img/speakers/divya_dutta.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
-#speaker7 .speakers-pic { background: url(../img/speakers/speaker1.jpg); background-repeat: no-repeat; background-size: cover; width: 156px; height:166px;}
-
-#indian-speakers { margin-left: 426px; }
-.speakers-pane .content .speaker-tour:first-child {width:1200px; padding:60px;}
-.speaker-tour { float:left; min-width:600px; height:100%;}
-td {vertical-align:top;}
-.speaker-tour h4.title { font-size: 30px; margin: 15px 0 10px 0; }
-
-#speaker-col2 { width:670px; height: 100 %; background-color: #486BB3; color: #FFF;}
-#speaker-col2 p {width:550px;}
-#speaker-col2 .speaker-desc {padding-top: 20px;}
-#speaker-col3 { width:670px; height: 100 %; background-color: #099948; color: #FFF;}
-#speaker-col3 p {width:550px;}
-#speaker-col3 .speaker-desc {padding-top: 20px;}
-#speaker-col4 { width:670px; height: 100 %; background-color: #D61F2F; color: #FFF;}
-#speaker-col4 p {width:550px;}
-#speaker-col4 .speaker-desc {padding-top: 20px;}
-#speaker-col5 { width:670px; height: 100 %; background-color: #F15925; color: #FFF;}
-#speaker-col5 p {width:550px;}
-#speaker-col5 .speaker-desc {padding-top: 20px;}
-#speaker-col6 { width:670px; height: 100 %; background-color: #0D6194; color: #FFF;}
-#speaker-col6 p {width:550px;}
-#speaker-col6 .speaker-desc {padding-top: 20px;}
-
-.speaker-profile {padding-left:20px;}
-
-.speaker-cover{ 
-    position: absolute; top: 0; left: 0;
-    height: 250px; width: 800px; 
-}
-    .mike_knowles { background: url(../img/speakers/bench_margosa_mike_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-    .david_carson { background: url(../img/speakers/david_carson_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-    .meagan_carnahan { background: url(../img/speakers/meagan_carnahan_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-    .elizabeth_jacob { background: url(../img/speakers/elizabeth_jacob_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-    .amardeep_behl { background: url(../img/speakers/amardeep_behl_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-    .divya_dutta { background: url(../img/speakers/divya_dutta_cover.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-    .mike_knowles { background: url(../img/speakers/bench_margosa.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-
-.speaker-teaser { margin-top: 190px; width: 450px; color: #404041; }
-    .speaker-teaser .meta-one { margin-top: 30px; }
-*/
 
 
 /* ***** Registrations ****** */
@@ -543,9 +468,11 @@ td {vertical-align:top;}
     .item:nth-child(6) { left: 1200px; top: 130px; }
     .item:nth-child(7) { left: 1400px; top: 130px; }
     .item:nth-child(8) { left: 1200px; top: 330px; }
-    .item:nth-child(9) { left: 1600px; top: 330px; }
-    .item:nth-child(10) { left: 1600px; top: 130px; }
-    .item:nth-child(11) { left: 1800px; top: 130px; }
+    .item:nth-child(9) { left: 1600px; top: 130px; }
+    .item:nth-child(10) { left: 2000px; top: 330px; }
+    .item:nth-child(11) { left: 2200px; top: 330px; }
+    .item:nth-child(12) { left: 2000px; top: 130px; }
+    .item:nth-child(13) { left: 2400px; top: 130px; }
 
     .item:hover { cursor: pointer; }
     .item img {
@@ -635,7 +562,8 @@ td {vertical-align:top;}
     .sudhir-sharma { background: url(../img/speakers/sudhir_sharma_large.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 20%; }
     .amardeep-behl { background: url(../img/speakers/amardeep_behl400X400.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 20%; }
     .ag-rao { background: url(../img/speakers/agrao400X200.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 20%; }
-
+    .kirti-trivedi { background: url(../img/speakers/kirti_trivedi400X200.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 20%; }
+    .manoj-neel { background: url(../img/speakers/manoj_neel400X400.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 40%; }
 
 
 .speaker-title { font-size: 30px; margin-bottom: 10px; }
@@ -692,10 +620,35 @@ td {vertical-align:top;}
   }
 }
 
-/**** Spinner Starts **** */  
-    
-    
+/**** Spinner ENDs **** */  
+ 
+/* ********** Schedule ******* */
+.schedule-pane .content .isotope { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
+#schedule-info { }
+    .schedule-pane .schedule-desc { margin-left: 25px; padding: 115px 35px 0 35px; }
+    .schedule-pane .each-tour:nth-child(1) .reverse-quote { margin: 60px 0 0 60px; }
+    .schedule-pane .each-tour:nth-child(1) .schedule-desc { padding-top: 25px; margin-left: 25px; }
 
+    .event-date { font-size: 18px; margin-top: 5px; color: rgba(0,0,0,.5); }
+
+    .schedule-list { margin-top: 25px; }
+    .schedule-pane .schedule-desc .meta-two { font-family: "fira_sans_otlight", sans-serif; padding: 5px 0; border-bottom: 1px solid rgba(0,0,0,.2); }
+    .schedule-pane .schedule-desc .meta-two:first-child { border-top: 1px solid rgba(0,0,0,.2); }
+        .schedule-pane .schedule-desc .meta-two:after { content: ' '; display: block; clear: both; }
+        .schedule-pane .schedule-desc .meta-two .time { padding-top: 3px; width: 100px; font-size: 14px; text-align: right; }
+        .schedule-pane .schedule-desc .meta-two .event { padding-left: 10px; width: 395px; line-height: 1.4em; }
+#schedule-pic { background: url(../img/sea-link.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+/** Workshops ***/
+
+.workshops-pane .schedule-desc .meta-two .event  { font-family: "fira_sans_otlight", sans-serif; }
+
+.workshops-pane .schedule-list li { margin-bottom: 20px; }
+    .workshops-pane .schedule-list li p { margin-bottom: 0px; }
+.workshops-pane .schedule-list { margin-top: 0; }
+.workshops-pane .fade { color: rgba(0,0,0,.5); }
+
+#workshops-pic { background: url(../img/pottery.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 
 
