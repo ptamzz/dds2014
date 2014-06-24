@@ -117,8 +117,14 @@
 			</p>
 
 			<div class="meta-two" style="margin-top: 35px;">
-				<a class="reg-button" href="http://bit.ly/ddskit2014" target="_blank">TEQIP Registration</a>
+				<p class="reg-button" style="display: inline-block; background-color: rgba(0,0,0,.6)">TEQUIP Registrations closed</p>
 			</div>
+		</div>
+
+		<div class="queries" style="margin-top: 45px; ">
+			<p class="meta-one">Queries:</p>
+			<p><span class="glyphicon glyphicon-phone"></span> +91 916 752 1646 (Avinash Jayakumar)</p>
+			<p><span class="glyphicon glyphicon-phone"></span> +91 989 009 1731 (Naveed Ahmed)</p>
 		</div>
 	</div>
 

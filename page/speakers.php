@@ -97,11 +97,16 @@
 			</div>
 		</div>
 		
-		<div class="item item300x300 speaker" data-speaker="ag-rao">
-			<img src="img/speakers/agrao400X400.jpg" alt="">
+		<div class="item item300x300 speaker" data-speaker="manoj-neel">
+			<!-- <img src="img/speakers/agrao400X400.jpg" alt="">
 			<div class="meta">
 				<h4 class="title">A G Rao</h4>
+			</div> -->
+			<img src="img/speakers/manoj_neel400X400.jpg" alt="">
+			<div class="meta">
+				<h4 class="title" style="color: #333;">Manoj Neel</h4>
 			</div>
+
 		</div>
 
 		<div class="item item600x300 speaker" data-speaker="kirti-trivedi">
@@ -111,12 +116,9 @@
 			</div>
 		</div>
 
-		<div class="item item600x600 speaker" data-speaker="manoj-neel">
-			<img src="img/speakers/manoj_neel400X400.jpg" alt="">
-			<div class="meta">
-				<h4 class="title" style="color: #333;">Manoj Neel</h4>
-			</div>
-		</div>
+		<!-- <div class="item item600x600 speaker" data-speaker="manoj-neel">
+			
+		</div> -->
 
 
 		<p class="small-meta" style="position: absolute; top: 550px; left: 0;" >Schedule/Programme is subject to change without prior notice</p>

@@ -138,7 +138,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 .small-meta { font-size: 12px; margin-top: 8px; }
 
 
-.logo-container { position: absolute; top: 185px; left: 50%; margin-left: -550px; z-index: 100; }
+.logo-container { width: 600px; position: absolute; top: 185px; left: 50%; margin-left: -550px; z-index: 100; }
     .logo-container img { width: 500px; }
     .home-time { color: #FFF; float: left; width: 210px; margin: 20px 25px 10px 35px; font-family: 'fira_sans_otlight', sans-serif; }
     .home-time h5 { font-family: 'fira_sans_otbold', sans-serif; color: #00A79D;  }
@@ -455,6 +455,8 @@ h3 { font-size: 25px; line-height: 1.4em; }
     cursor: pointer;
 }
 
+#flyin, #flyout { display: none; }
+
 
 /* ***** Speakers ***** */
 /*  .item */
@@ -632,6 +634,9 @@ h3 { font-size: 25px; line-height: 1.4em; }
     .event-date { font-size: 18px; margin-top: 5px; color: rgba(0,0,0,.5); }
 
     .schedule-list { margin-top: 25px; }
+        .schedule-list .event .schedule-time { display: inline-block; }
+
+
     .schedule-pane .schedule-desc .meta-two { font-family: "fira_sans_otlight", sans-serif; padding: 5px 0; border-bottom: 1px solid rgba(0,0,0,.2); }
     .schedule-pane .schedule-desc .meta-two:first-child { border-top: 1px solid rgba(0,0,0,.2); }
         .schedule-pane .schedule-desc .meta-two:after { content: ' '; display: block; clear: both; }
@@ -639,8 +644,8 @@ h3 { font-size: 25px; line-height: 1.4em; }
         .schedule-pane .schedule-desc .meta-two .event { padding-left: 10px; width: 395px; line-height: 1.4em; }
 #schedule-pic { background: url(../img/sea-link.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
-/** Workshops ***/
 
+/** Workshops ***/
 .workshops-pane .schedule-desc .meta-two .event  { font-family: "fira_sans_otlight", sans-serif; }
 
 .workshops-pane .schedule-list li { margin-bottom: 20px; }
@@ -650,7 +655,13 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
 #workshops-pic { background: url(../img/pottery.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
+    .game-design { background: url(../img/game-design.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 20%; }
+    .raku-pottery { background: url(../img/raku-pottery.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    .art-of-seeing { background: url(../img/art_of_seeing.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+    .narrative-and-storytelling { background: url(../img/dadi_pudumjee.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 30%; }
+    .interaction-design { background: url(../img/speakers/agrao400X200.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 20%; }
 
-
-
+.workshops-pane .event { cursor: pointer; }
+    .workshops-pane .event .meta-one { color: #00A79D; } 
+    .workshops-pane .event:hover .meta-one { color: #13756F; }
 

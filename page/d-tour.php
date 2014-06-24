@@ -16,9 +16,10 @@
 			<p><a href="docs/DDS2014.d.tour_brochure.pdf" target="_blank"><span class="glyphicon glyphicon-file"></span> Download d.Tour Brochure (3.4MB)</a></p>
 			
 			<p class="meta-two" style="margin-top: 35px;">
-				<a class="reg-button" href="http://dtourdds.doattend.com/" target="_blank">Register for d.Tour now*</a>
+				<div class="quote">*d.Tour Registrations closed</div>
 			</p>
-			<br/>
+			<p class="meta-two" style="margin-top: 30px;">Note:</p>
+			<p class="small-meta">d.Tour is different from the 1 Day Workshops scheduled on June 27th, 2014</p>
 			<p class="small-meta">The event registration costs ₹ 200 which will be refunded to the participants along with their participation certificates.</p>
 			<p class="small-meta">*Limited Seats</p>
 		</div>

@@ -11,6 +11,11 @@
 		<h6>Nehru Centre, Worli, Mumbai</h6>
 		<div class="small-meta">Exhibitions</div>
 	</div>
+
+	<div class="home-time small-meta">
+		<a href="http://ddsidc.com/docs/DDS_2014_Sponsor_Brochure_A.pdf" target="_blank"><span class="glyphicon glyphicon-save"></span> Download Sponsorship Brochure</a>
+	</div>
+	
 </div>
 
 

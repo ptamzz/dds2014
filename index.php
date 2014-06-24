@@ -9,7 +9,7 @@
 	Animation, Mobility, Vehicle, Product, Industrial, Centre, Center" />
 	<link rel="image_src" href="http://www.ddsidc.com/img/dds_preview.jpg" />
 
-    <meta name="author" content="Pritam Pebam" />
+    <meta name="author" content="IDC IIT Bombay" />
     <link rel="shortcut icon" href="img/favicon.png">
 
     <!-- SVG Hover Effect -->
@@ -144,6 +144,19 @@
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
 
+	<div class="schedule-pane st-container st-effect-11">
+		<!-- content push wrapper -->
+		<div class="st-pusher">
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<div class="main clearfix">
+						<div class="content"><!-- content will come here --></div>
+					</div><!-- /main -->
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+
 	<!-- Speakers -->
 	<div class="speakers-pane st-container st-effect-11">
 		<!-- content push wrapper -->
@@ -198,19 +211,6 @@
 		</div><!-- /st-pusher -->
 	</div><!-- /st-container -->
 
-	<div class="schedule-pane st-container st-effect-11">
-		<!-- content push wrapper -->
-		<div class="st-pusher">
-			<div class="st-content"><!-- this is the wrapper for the content -->
-				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-					<div class="main clearfix">
-						<div class="content"><!-- content will come here --></div>
-					</div><!-- /main -->
-				</div><!-- /st-content-inner -->
-			</div><!-- /st-content -->
-		</div><!-- /st-pusher -->
-	</div><!-- /st-container -->
-
 	<!-- d.tour -->
 	<div class="d-tour-pane st-container st-effect-11">
 		<!-- content push wrapper -->
@@ -245,7 +245,7 @@
 	  <div class="dot2"></div>
 	</div>
 </div>
-<div id="flyout"><span class="glyphicon glyphicon-chevron-left"></span></div>
+<div id="flyout"><span class="glyphicon glyphicon-chevron-right"></span></div>
 
 
 	<div id="overlay"></div>

@@ -105,6 +105,36 @@ $(function() {
 		showDesc();
 	});
 
+
+	//Load Speaker Profile 
+	$(document).on("click", ".workshops-pane .event", function(){
+		console.log(".event clicked");
+		
+		$("#flyin").html("<div class='spinner'><div class='dot1'></div><div class='dot2'></div></div>");
+
+		console.log($(this).data('workshop'));
+
+			//Get speaker desc
+			$.ajax({
+				type: "POST",
+				url: "php/workshop-details.php",
+				data: { "workshop" : encodeURIComponent($(this).data('workshop')) },
+				cache: false,
+				error: function(xhr){
+					if(xhr.status == 403){
+						$('#flyin').html("<p class='quote'>And error occured. If the error persist, kindly contact contact@ddsidc.com</a>");
+					}
+				},
+				success: function(html){
+					$("#flyin").css({ 'height' : winHeight });
+					$("#flyin").html(html);	
+				}
+			});
+			showDesc();
+		
+	});
+
+
 	//Hide Speaker desc
 	$("body").on("click", "#flyout", function(){ hideDesc(); });
 	$("body").on("click", "#overlay", function(){ hideDesc(); });
@@ -127,6 +157,9 @@ function removeOverlay(){ $("#overlay").css({ 'z-index' : 1 }); }
 function showDesc(){
 	getOverlay();
 
+	$("#flyin").show();
+	$("#flyout").show();
+
 	$(".independent").show();
 	$(".independent").animate({
 		'right' : '0'
@@ -139,6 +172,9 @@ function showDesc(){
 
 // Function to HIDE description panel from right
 function hideDesc(){
+
+	$("#flyin").hide();
+	$("#flyout").hide();
 
 	$("#flyout").animate({
 		'right' : '-1000'
