@@ -327,7 +327,12 @@ function loadPage(p){
 				$( ".each-tour" ).each(function(i) {
 					var eHeight = $(this).children('.d-tour-desc').height();
 					$(this).children('.d-tour-pic').css({ 'height' : 	winHeight - eHeight - 100 });
+					console.log("D-tour");
 					if(i%2 == 0){ $(this).children('.d-tour-pic').css({ 'position' : 'absolute', 'bottom' : 0 }); }	//even .each-tour
+						else { 
+							$(this).children('.d-tour-pic').css({ 'position' : 'absolute', 'top' : 0 }); 
+							$(this).children('.d-tour-desc').css({ 'position' : 'absolute', 'top' : winHeight - eHeight - 110 }); 
+						}
 				});
 			} else if (p == 'about'){
 				console.log("About");

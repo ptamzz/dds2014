@@ -3,7 +3,7 @@
 	<div class="each-tour" style="width: 800px;">
 		<div class="reverse-quote reverse-quote-yellow">Registrations</div>
 		<div class="schedule-desc">
-			<h4 class="title">DDS 2014 Main Event Registration</h4>
+			<h4 class="title">TEQIP DDS 2014 Main Event Registration</h4>
 			<p >Entry to DDS Exhibition is <strong>free</strong> for all 3 days. The following charges are applicable for DDS 
 				workshops and conferences.</p>
 			<div id="reg-tickets" class="table">

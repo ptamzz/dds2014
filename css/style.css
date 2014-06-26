@@ -271,6 +271,7 @@ h3 { font-size: 25px; line-height: 1.4em; }
 
         .home i { background: url("../img/dds_main_icon.png") no-repeat; background-size: 25px; }
         .speakers i { background: url("../img/icons/speakers.png") no-repeat; background-size: auto 25px; background-position: 50% 50%;}
+        .projects i { background: url("../img/icons/projects.png") no-repeat; background-size: auto 25px; background-position: 50% 50%;}
         .workshops i { background: url("../img/icons/workshop.png") no-repeat; background-size: 22px; }
         .d-tour i { background: url("../img/icons/dtour.png") no-repeat; background-size: 25px; }
         .projects i { background: url("../img/icons/projects.png") no-repeat; background-size: 25px; }
@@ -284,11 +285,12 @@ h3 { font-size: 25px; line-height: 1.4em; }
         .nav-title { font-family: "fira_sans_otregular", sans-serif; font-size: 30px; }
 
 .logo-bunch { position: absolute; left: 25px; bottom: 50px; width: 210px; }
+    .logo-bunch .meta-two { margin-left: 25px; }
     .logo-bunch a { display: block; }
-    .logo-bunch a:nth-child(1) { margin-left: 10px; padding: 3px 15px; }
-        .logo-bunch a:nth-child(1) img { width: 45px; }
-    .logo-bunch a:nth-child(2) { padding: 4px 15px; border-left: 2px solid rgba(0,0,0,.5); }
-        .logo-bunch a:nth-child(2) img { width: 80px; }
+    .logo-bunch a:nth-child(2) { margin-left: 10px; padding: 3px 15px; }
+        .logo-bunch a:nth-child(2) img { width: 45px; }
+    .logo-bunch a:nth-child(3) { padding: 4px 15px; border-left: 2px solid rgba(0,0,0,.5); }
+        .logo-bunch a:nth-child(3) img { width: 80px; }
 
 #reg-hotlink { position: absolute; right: 180px; top: -50px; z-index: 1000; }
 
@@ -627,18 +629,25 @@ h3 { font-size: 25px; line-height: 1.4em; }
 /* ********** Schedule ******* */
 .schedule-pane .content .isotope { background: url(../img/wire-bg.png); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; }
 #schedule-info { }
-    .schedule-pane .schedule-desc { margin-left: 25px; padding: 115px 35px 0 35px; }
+    .schedule-pane .schedule-desc { margin-left: 25px; padding: 50px 25px 0 25px; }
     .schedule-pane .each-tour:nth-child(1) .reverse-quote { margin: 60px 0 0 60px; }
     .schedule-pane .each-tour:nth-child(1) .schedule-desc { padding-top: 25px; margin-left: 25px; }
 
     .event-date { font-size: 18px; margin-top: 5px; color: rgba(0,0,0,.5); }
 
     .schedule-list { margin-top: 25px; }
-        .schedule-list .event .schedule-time { display: inline-block; }
+        .event { display: table; }
+            .event>div { float: left; }
+            .event .schedule-time { display: table-cell; width: 112px; }
+            .event .schedule-event { display: table-cell; width: 265px; }
+    
 
-
-    .schedule-pane .schedule-desc .meta-two { font-family: "fira_sans_otlight", sans-serif; padding: 5px 0; border-bottom: 1px solid rgba(0,0,0,.2); }
+    .schedule-pane .schedule-desc .meta-one { font-family: "fira_sans_otlight" sans-serif; }
+    .schedule-pane .schedule-desc .meta-two { font-family: "fira_sans_otlight", sans-serif; padding: 3px 0; border-bottom: 1px solid rgba(0,0,0,.2); }
     .schedule-pane .schedule-desc .meta-two:first-child { border-top: 1px solid rgba(0,0,0,.2); }
+
+    .schedule-pane .schedule-desc .meta-two.lunch { border-bottom: 1px solid #00A79D; border-top: 1px solid #00A79D; margin-top: -1px; color: #00A79D; }
+
         .schedule-pane .schedule-desc .meta-two:after { content: ' '; display: block; clear: both; }
         .schedule-pane .schedule-desc .meta-two .time { padding-top: 3px; width: 100px; font-size: 14px; text-align: right; }
         .schedule-pane .schedule-desc .meta-two .event { padding-left: 10px; width: 395px; line-height: 1.4em; }

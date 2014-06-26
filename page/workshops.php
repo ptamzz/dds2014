@@ -20,7 +20,7 @@
 			<p class="meta-two" style="margin-top: 30px;">Note:</p>
 			<p class="small-meta">These workshops are different from the d.Tour sessions held on June 14, 2014</p>
 			<p class="small-meta">Workshop content is subject to change.</p>
-			<p class="small-meta" style="color: rgba(0,0,0,.5);">Last Updated: 3:42PM, 24th June</p>
+			<p class="small-meta" style="color: rgba(0,0,0,.5);">Last Updated: 2:05PM, 25th June</p>
 		</div>
 	</div>
 
@@ -53,6 +53,12 @@
 					<div class="event" data-workshop="narrative-and-storytelling">
 						<p class="meta-one">Storytelling &amp; Puppetry Workshop</p>
 						<p class="fade">Dadi Pudumjee</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="meta-one" style="color: #333;">Interaction Design</p>
+						<p class="fade">Workshop Cancelled</p>
 					</div>
 				</li>
 			</ul>

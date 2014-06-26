@@ -15,7 +15,7 @@
 				</div>
 				<p></p><p></p>
 
-			<p class="meta-two">RSVP at <a href="http://goo.gl/tvgbfa" target="_blank">http://goo.gl/tvgbfa</a></p>
+			<p class="meta-two">RSVP at <a href="http://goo.gl/6FNMUC" target="_blank">http://goo.gl/6FNMUC</a></p>
 			<p>See you soon!</p>
 
 			<div class="queries" style="margin-top: 15px; ">

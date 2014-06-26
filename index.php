@@ -47,6 +47,13 @@
 				</a>
 			</li>
 			
+			<!-- <li class="projects">
+				<a href="#/projects">
+					<i class="icon"></i>
+					<span class="nav-title">Projects</span>
+				</a>
+			</li> -->
+
 			<li class="registrations">
 				<a href="#/registrations">
 					<i class="icon"></i>
@@ -98,6 +105,7 @@
 			
 		</ul>
 		<div class="logo-bunch">
+			<p class="meta-two">TEQIP DDS 2014</p>
 			<a class="left" href="http://iitb.ac.in" target="_blank"><img src="img/IIT_Bombay_Logo.svg.png" alt="IIT Bombay Logo"></a>
 			<a class="left" href="http://www.idc.iitb.ac.in" target="_blank"><img src="img/IDC_Logo.png" alt="Industrial Design Centre"></a>
 		</div>
@@ -108,6 +116,19 @@
 		<!-- content push wrapper -->
 		<div class="st-pusher">
 
+			<div class="st-content"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<div class="main clearfix">
+						<div class="content"><!-- content will come here --></div>
+					</div><!-- /main -->
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+
+	<div class="projects-pane st-container st-effect-11">
+		<!-- content push wrapper -->
+		<div class="st-pusher">
 			<div class="st-content"><!-- this is the wrapper for the content -->
 				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 					<div class="main clearfix">
